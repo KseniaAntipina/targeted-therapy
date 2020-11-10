@@ -1,0 +1,52 @@
+/*common*/
+
+.container {
+    max-width: 1170px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* header */
+
+.header {
+    background: linear-gradient(270.71deg, #421089 30.05%, #25248C 78.09%), #1A2A8A;
+    color: #fff;
+}
+
+.header-top__logo {
+    display: flex;
+    padding-top: 27px;
+}
+
+.header-top__logo img {
+    width: 133px;
+    padding-right: 10px;
+}
+
+.header-top__logo .logo__title {
+    font: normal 500 10px/16px 'Gilroy';
+    color: #A991FF;
+    align-self: center;
+    padding-top: 12px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.header-top__logo .logo__title::after {
+    content: '';
+    width: 1px;
+    height: 32px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.header-top__logo .logo__title2 {
+    font: normal 700 14px/17px 'Montserrat';
+    align-self: center;
+    padding-top: 5px;
+    padding-left: 10px;
+}
