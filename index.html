@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Таргетная терапия</title>
 </head>
@@ -17,53 +18,343 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="header-top__logo logo">
-                            <img src="./images/logo.png" class="logo__img" alt="логотип">
+                            <img src="./images/logo.svg" class="logo__img" alt="логотип">
                             <div class="logo__title">Медико-генетический центр<br>
                                 Лаборатория молекулярной патологии</div>
                             <div class="logo__title2">Заголовок</div>
                         </div>
                     </div>
                     <div class="col-md-5 ml-auto">
-                        <div class="header-top__city">
-                            <span>Ваш город</span> Ростов-на-Дону(сменить)
-                        </div>
-                        <div class="header-top_tel">
-                            <span>Звонок бесплатный</span> 8 (800) <b>333-45-38</b>
+                        <div class="header-top__right-block">
+                            <div class="header-top__city">
+                                <span>Ваш город:</span> Ростов-на-Дону(сменить)
+                            </div>
+                            <div class="header-top_tel">
+                                <span>Звонок бесплатный</span> 8 (800) <b>333-45-38</b>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <nav class="header-menu">
-                <ul>
-                    <li>Эффективное лечение</li>
-                    <li>Этапы лечения</li>
-                    <li>Комплексная научная группа</li>
-                    <li>Подбор терапии</li>
-                    <li>Таргетная терапия</li>
-                    <li>Контакты</li>
-                    <li>Записаться</li>
-                </ul>
-            </nav>
-            <div class="header-banner">
-                <div class="header-banner__title">
-                    ТАРГЕТНАЯ ТЕРАПИЯ В МГЦ ГЕНОМЕД
-                    <span>- САМЫЙ ТОЧНЫЙ СПОСОБ ЛЕЧЕНИЯ РАКА</span>
-                </div>
-                <div class="header-banner__form">
-                    <p>Ответьте на 5 ВОПРОСОВ для подбора индивидуальной программы лечения и получите 5% СКИДКУ на наши
-                        услуги</p>
-                    <a href="javascript:void(0)">Начать</a>
-                </div>
-                <div class="header-banner__advantages advantages">
-                    <p>Онкодиагностика в Геномед - уверенность в результате</p>
-                    <div class="advantages__icons">
-
+        </div>
+        <div class="menu-line container-fluid">
+            <div class="container">
+                <nav class="header-menu">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="menu">
+                                <li><a href="javascript:void(0)">Эффективное лечение</a></li>
+                                <li><a href="javascript:void(0)">Этапы лечения</a></li>
+                                <li><a href="javascript:void(0)" class="active">Комплексная научная группа</a></li>
+                                <li><a href="javascript:void(0)">Подбор</a></li>
+                                <li><a href="javascript:void(0)">Таргетная терапия</a></li>
+                                <li><a href="javascript:void(0)">Контакты</a></li>
+                                <li><a href="javascript:void(0)">Записаться</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11">
+                        <div class="header-banner__title">
+                            <h1>ТАРГЕТНАЯ ТЕРАПИЯ В МГЦ ГЕНОМЕД</h1>
+                            <span>- САМЫЙ ТОЧНЫЙ СПОСОБ ЛЕЧЕНИЯ РАКА</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="header-banner__form">
+                                <p>Ответьте на <span>5 ВОПРОСОВ</span> для подбора
+                                    индивидуальной программы лечения
+                                    и получите <span>5% СКИДКУ</span> на наши услуги
+                                </p>
+                                <a href="javascript:void(0)" class="form-btn">Начать</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="header-banner__advantages">
+                                <div class="advantages__title">Онкодиагностика в Геномед - уверенность<br> в результате
+                                </div>
+                                <div class="advantages__icons advantages">
+                                    <div class="advantages__item">
+                                        <img src="./images/icon-target.svg" alt="иконка">
+                                        <p>Genomed -<br> точный способ назначения терапии</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/icon-laboratory.svg" alt="иконка">
+                                        <p>Собственная генетическая и ИГХ лаборатория</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/oms-icon.svg" alt="иконка">
+                                        <p>Бесплатно по ОМС</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/cooperation.svg" alt="иконка">
+                                        <p>Сотрудничество с зарубежными лабораторями</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video__text genetic-disease">
+                        <div class="genetic-disease__title"><span>ЛЮБОЙ РАК</span> - ГЕНЕТИЧЕСКОЕ ЗАБОЛЕВАНИЕ
+                        </div>
+                        <div class="genetic-disease__subtitle">и мы знаем как Вам помочь! </div>
+                        <div class="genetic-disease__text content-text">
+                            <p> Рак каждого пациента представляет собой уникальную мозаику,
+                                созданную комбинацией генетических и эпигенетических изменений. Опухоли одной
+                                локализации могут обладать совершенно различными генетическими изменениями. </p>
+                            <p> Именно поэтому, на первый взгляд, одна и та же опухоль у 2-х различных пациентов будет
+                                по-разному отвечать на одну и ту же терапию. </p>
+                            <p> Несмотря, на кажущуюся сложность, мы в своей работе стараемся доступно
+                                объяснить пациенту возможности персонализированного лечения конкретно его типа рака.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video__content">
+                        <img src="./images/zaglushka.PNG" alt="заглушка">
+                        <div class="video__title">Почему таргетная терапия лучше стандартных методов
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="consult-form">
+        <div class="container">
+            <div class="row consult-form__content no-gutters">
+                <div class="col-md-5 offset-md-2">
+                    <div class="consult-form__title">
+                        <p>Не знаете с чего начать? Спросите нас!</p>
+                        <p>Первичная консультация специалиста<span>- БЕСПЛАТНО!</span></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <form action="" method="post">
+                        <input type="text" id="name" placeholder="Имя">
+                        <input type="tel" id="phone" placeholder="Телефон" required>
+                        <input type="email" id="email" placeholder="Ваш E-mail">
+                        <button type="submit" href="javascript:void(0)" class="consult-form__btn">Получить
+                            консультацию</button>
+                        <div class="privPolicy">
+                            <input class="styled-checkbox privPolicy-check" id="styled-checkbox-2" type="checkbox"
+                                checked>
+                            <label for="styled-checkbox-2">Нажимая на кнопку «Отправить» Вы соглашаетесь с политикой
+                                конфиденциальности и даете согласие на обработку своих персональных данных</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="efficiency">
+        <div class="container-fluid efficiency-wrap">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <h2>ИЗ ЧЕГО СКЛАДЫВАЕТСЯ ЭФФЕКТИВНОСТЬ ПРИ ЛЕЧЕНИЯ РАКА</h2>
+                        <div class="efficiency-info">
+                            <div class="efficiency-item efficiency-item1">
+                                <img src="./images/glasses.svg" alt="иконка">
+                                <span class="efficiency-item__title">Компетентный онколог</span>
+                                <div class="efficiency-item__text content-text">В нашей команде работают увлеченные
+                                    люди, глубоко
+                                    понимающие
+                                    генетическую природу рака. Непрерывное совершенствование знаний позволяет нам
+                                    использовать
+                                    самые последние достижения в области молекулярной генетики рака на пользу нашим
+                                    пациентам.
+                                </div>
+                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                            </div>
+                            <div class="efficiency-item efficiency-item2">
+                                <img src="./images/loupe.svg" alt="иконка">
+                                <span class="efficiency-item__title">Правильно определенная природа рака</span>
+                                <div class="efficiency-item__text content-text">В международной базе знаний прецизионной
+                                    терапии рака
+                                    ОnсоКВ
+                                    на август 2020г в 53 типах опухолей человека выявлено 682 гена, которые участвуют в
+                                    процессе
+                                    канцерогенеза. Именно с развитием представлений о мутациях в этих генах, появляются
+                                    новые
+                                    лекарственные средства, предназначенные для коррекции этих изменений. Поэтому
+                                    генетическая
+                                    диагностика является важным этапом в комплексном подходе к диагностике и лечению
+                                    рака,
+                                    наряду с работой врачей клиницистов и патомофологов. </div>
+                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                            </div>
+                            <div class="infographics-line">
+                                <div class="infographics-line-wrap">
+                                    <img src="./images/circle1.svg" alt="круг" class="infographics-line__circle">
+                                    <img src="./images/circle2.svg" alt="круг" class="infographics-line__circle">
+                                    <img src="./images/circle3.svg" alt="круг" class="infographics-line__circle">
+                                </div>
+                            </div>
+                            <div class="efficiency-item efficiency-item3">
+                                <img src="./images/target.svg" alt="иконка">
+                                <span class="efficiency-item__title">Таргетная терапия рака</span>
+                                <div class="efficiency-item__text content-text">Открытие онкогенов позволило по-новому
+                                    взглянуть на
+                                    возможности лечения рака, ведь если существуют гены, способные запускать процессы
+                                    опухолевого перерождения, можно попытаться инактивировать их и остановить болезнь.
+                                    Появился
+                                    новый подход к лечению рака - подход к применению лекарств, основанный на геномных
+                                    изменениях, а не на типе опухоли, независимо от ее локализации. В основе таргетной
+                                    терапии
+                                    лежит принцип выявления генетической мишени, которая заставляет опухоль развиваться
+                                    и
+                                    подбора лекарств, влияющих на данную мишень.</div>
+                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stages">
+        <div class="container">
+            <h2>ЭТАПЫ ПРИ ПОДБОРЕ ЛЕЧЕНИЯ РАКА</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stages-item content-text">
+                        <img src="./images/stage-icon1.svg" alt="доктор">
+                        Консультация онколога, или совместный консилиум (онколог + генетик) в ходе которого
+                        разбирается Ваш случай и подбирается необходимое исследование. Для записи на консультцию
+                        <a href="javascript:void(0)">нажмите тут</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stages-item content-text">
+                        <img src="./images/stage-icon2.svg" alt="доктор">
+                        Проведение генетического исследования для понимания природы именно Вашего рака и назначения
+                        лечения. Список исследований для проведения таргетной терапии можно посмотреть
+                        <a href="javascript:void(0)">нажав тут</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stages-item content-text">
+                        <img src="./images/stage-icon3.svg" alt="доктор">
+                        Наша команда специалистов, которая состоит из онколога, генетика, биоинформатика принимают
+                        решение о самом эффективном лечении именно Вашего рака. Записаться на совместный консилиум
+                        <a href="javascript:void(0)">можно тут </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages-therapy">
+        <div class="container">
+            <h2>ПРЕИМУЩЕСТВА ТАРГЕТНОЙ ТЕРАПИИ</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="advantages-therapy__item">
+                        <div class="advantages-therapy__wrapImg">
+                            <img src="./images/advantages-icon1.svg" alt="иконка">
+                        </div>
+                        <p>Эффективность по сравнению с традиционной химиотерапией выше во много раз, что подтверждается
+                            клиническими испытаниями и исследованиями Американских и Европейских коллег.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantages-therapy__item">
+                        <div class="advantages-therapy__wrapImg">
+                            <img src="./images/tabletki.svg" alt="таблетка">
+                        </div>
+                        <p> Вред от таргетных препаратов снижается в разы, за счет целевого воздействия на
+                            опухолевые клетки, практически не затрагивая здоровые.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantages-therapy__item">
+                        <div class="advantages-therapy__wrapImg">
+                            <img src="./images/advantages-icon3.svg" alt="иконка">
+                        </div>
+                        <p> Экономия времени и здоровья от неверно назначенного лечения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="genomed-team">
+        <div class="container">
+            <div class="genomed-team__text">
+                <h2>ПЕРСОНАЛЬНЫЙ ПОДХОД КОМАНДЫ ПРОФЕССИОНАЛОВ МГЦ ГЕНОМЕД</h2>
+                <div class="content-text">
+                    <p>Быть в курсе самых современных достижений в лечении опухолевых заболеваний это задача которую мы
+                        ставим перед собой.</p>
+                    <p>Ежедневно в мире выходит несколько десятков работ, в которых публикуется
+                        информация, способная повлиять на лечение больного.</p>
+                    <p> Освоить этот огромный объём разносторонней информации для
+                        одного врача онколога поистине нереальная задача. Необходимы специалисты в области молекулярной
+                        генетики, фармакологии и клинической онкологии.</p>
+                    <p>Не менее важная задача - клиническая оценка состояния обратившегося пациента: его возраст,
+                        сопутствующие заболевания, анализ ранее проводимого лечения и его интерпретация. Врач,
+                        практического
+                        здравоохранения, имеющий считанные минуты на прием пациента часто не имеет возможности вникнуть
+                        в
+                        детали проблемы пациента и, нужно быть реалистом, не владеет огромным объемом постоянно
+                        меняющейся
+                        информации по
+                        лечению раковых заболеваний и новым подходам к лечению.</p>
+                    <p> Существует единственный выход - кропотливая работа команды врачей с каждым пациентом.
+                        Необходимое
+                        современное оборудование, компетентность каждого участника команды, помноженное на
+                        самоотверженность
+                        в работе, даст наилучший результат в лечении.</p>
+                </div>
+            </div>
+            <div class="genomed-team__slider">
+                <div class="slider-item">
+                    <img src="./images/zhusina.png" alt="фото">
+                    <div class="slider-item__title">Жусина Юлия Геннадьевна</div>
+                    <div class="slider-item__subtitle"></div>
+                    <div class="slider-item__price"></div>
+                    <div class="slider-item__experience"></div>
+                    <a href="javascript:void(0)" class="slider-item__appointment">Записаться</a>
+                    <a href="javascript:void(0)" class="slider-item__about">О враче</a>
+                </div>
+                <div class="slider-item">
+                    <img src="./images/merkulov.png" alt="фото">
+                    <div class="slider-item__title">Меркулов Игорь Александрович</div>
+                    <div class="slider-item__subtitle"></div>
+                    <div class="slider-item__price"></div>
+                    <div class="slider-item__experience"></div>
+                    <a href="javascript:void(0)" class="slider-item__appointment">Записаться</a>
+                    <a href="javascript:void(0)" class="slider-item__about">О враче</a>
+                </div>
+                <div class="slider-item">
+                    <img src="./images/kanivets.png" alt="фото">
+                    <div class="slider-item__title">Канивец Илья Вячеславович</div>
+                    <div class="slider-item__subtitle"></div>
+                    <div class="slider-item__price"></div>
+                    <div class="slider-item__experience"></div>
+                    <a href="javascript:void(0)" class="slider-item__appointment">Записаться</a>
+                    <a href="javascript:void(0)" class="slider-item__about">О враче</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

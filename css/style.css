@@ -1,11 +1,35 @@
 /*common*/
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus, input:active {
+    outline: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+h2 {
+    font: normal 700 30px/45px 'Montserrat';
+}
+
+.content-text {
+    font: normal 400 18px/27px 'Gilroy';
+    color: #2F3A40;
 }
 
 /* header */
@@ -15,9 +39,12 @@ ul {
     color: #fff;
 }
 
+.header-top {
+    padding: 27px 0 33px 0;
+}
+
 .header-top__logo {
     display: flex;
-    padding-top: 27px;
 }
 
 .header-top__logo img {
@@ -41,7 +68,7 @@ ul {
     background-color: #fff;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 7px;
 }
 
 .header-top__logo .logo__title2 {
@@ -49,4 +76,565 @@ ul {
     align-self: center;
     padding-top: 5px;
     padding-left: 10px;
+}
+
+.header-top__right-block {
+    display: flex;
+    justify-content: end;
+    padding-top: 12px;
+    align-items: end;
+}
+
+.header-top__city {
+    padding-right: 15px;
+    font: normal 700 12px/15px 'Gilroy';
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.header-top__city::before {
+    content: '';
+    width: 1px;
+    height: 32px;
+    background-color: #fff;
+    position: absolute;
+    left: -21px;
+    top: 0px;
+}
+
+.header-top__city span {
+    color: #A991FF;
+    display: block;
+}
+
+.header-top_tel {
+    text-align: right;
+    font: normal 400 16px/19px 'Gilroy';
+}
+
+.header-top_tel span {
+    display: block;
+    font: normal 400 12px/14px 'Gilroy';
+    color: #A991FF;
+    padding-bottom: 5px;
+}
+
+.menu-line {
+    position: relative;
+    padding: 0;
+}
+
+.menu-line::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    opacity: 0.3;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li a {
+    font: normal 400 14px/16px 'Gilroy';
+    color: #fff;
+    padding-bottom: 12px;
+    display: block;
+}
+
+.menu li a.active {
+    border-bottom: 2px solid #F1EEFF;
+}
+
+.header-banner {
+    padding-top: 84px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.header-banner::after {
+    content: url(../images/vector-firstBlock.svg);
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.header-banner::before {
+    content: url(../images/vector2-firstBlock.svg);
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+}
+
+.header-banner__title {
+    padding-bottom: 62px;
+}
+
+.header-banner__title h1 {
+    font: normal 400 42px/58px 'Montserrat';
+    background: linear-gradient(90.47deg, #968CFF 10.85%, #AD79FF 84.25%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.header-banner__title span {
+    font: normal 700 42px/63px 'Montserrat';
+    display: block;
+}
+
+.header-banner__form {
+    padding-right: 14px;
+}
+
+.header-banner__form p {
+    font: normal 400 22px/33px 'Montserrat';
+    color: #A991FF;
+    margin-bottom: 95px;
+}
+
+.header-banner__form p span {
+    font-weight: 800;
+    color: #fff;
+}
+
+.header-banner__form .form-btn {
+    font: normal 600 18px/21px 'Gilroy';
+    color: #fff;
+    padding: 14px 80px 14px 80px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    height: 52px;
+    width: 222px;
+}
+
+.header-banner__advantages {
+    color: #A991FF;
+    font: normal 600 16px/19px 'Gilroy';
+    padding-top: 5px;
+}
+
+.advantages__icons {
+    display: flex;
+}
+
+.header-banner__advantages .advantages__title {
+    font: normal 600 18px/27px 'Montserrat';
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.advantages__item {
+    flex: 1 1 25%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.advantages__item img {
+    padding-bottom: 10px;
+    height: 80px;
+}
+
+.video {
+    padding: 73px 0 63px 0;
+}
+
+.genetic-disease__title {
+    font: normal 700 30px/48px 'Montserrat';
+    color: #2F3A40;
+    margin-bottom: 11px;
+}
+
+.genetic-disease__title span {
+    font-weight: 400;
+    display: block;
+}
+
+.genetic-disease__subtitle {
+    font: italic 600 24px/36px 'Montserrat';
+    color: #8977D6;
+    margin-bottom: 22px;
+}
+
+.genetic-disease__text p {
+    margin-bottom: 0;
+}
+
+.video__content img {
+    max-width: 100%;
+    margin-bottom: 26px;
+}
+
+.video__title {
+    font: normal 500 20px/30px 'Montserrat';
+    color: #2F3A40;
+}
+
+/* section consult form*/
+
+.consult-form {
+    background: #F1F5FF;
+    position: relative;
+}
+
+.consult-form__content {
+    padding: 54px 0 26px 0;
+}
+
+.consult-form::before {
+    content: url(../images/doc.png);
+    position: absolute;
+    right: 70%;
+}
+
+.consult-form__title {
+    font: normal 600 22px/33px 'Montserrat';
+    color: #2F3A40;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.consult-form__title span {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.consult-form form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.consult-form form input:not([type='checkbox']) {
+    border: none;
+    min-width: 221px;
+    height: 49px;
+    border-radius: 4px;
+    padding: 15px 0 12px 16px;
+}
+
+.consult-form form input:nth-child(odd) {
+    margin: 0 16px 15px 0;
+}
+
+.consult-form form input::placeholder {
+    font: normal 500 14px/21px 'Gilroy';
+    color: #808689;
+}
+
+.consult-form__btn {
+    width: 222px;
+    height: 48px;
+    background-color: #335DFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font: normal 600 14px/16px 'Gilroy';
+}
+
+.privPolicy {
+    margin-top: 5px;
+    max-width: 350px;
+}
+
+.privPolicy label {
+    font: normal 400 11px/13px 'Gilroy';
+    color: #2F3A40;
+}
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.styled-checkbox+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 9px;
+    height: 9px;
+    background: #335DFF;
+    border-radius: 2px;
+}
+
+.styled-checkbox:checked+label:before {
+    background: #335DFF;
+}
+
+.styled-checkbox:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+.styled-checkbox:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+.styled-checkbox:checked+label:after {
+    content: '\2714';
+    position: absolute;
+    left: 1px;
+    top: -2px;
+    color: #fff;
+    font-size: 9px;
+}
+
+/*section efficiency*/
+
+.efficiency {
+    padding-top: 66px;
+    padding-bottom: 54px;
+    position: relative;
+}
+
+.efficiency::before {
+    content: url('../images/squarePurple.svg');
+    position: absolute;
+    top: 8%;
+    left: 0;
+}
+
+.efficiency::after {
+    content: url('../images/circlePurpleEmpty.svg');
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.efficiency-wrap::after {
+    content: url('../images/circlePurpleSmall.svg');
+    right: 20px;
+    bottom: 35%;
+    position: absolute;
+}
+
+.efficiency h2 {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 46px auto;
+}
+
+.efficiency-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.efficiency-item {
+    padding: 30px 28px 40px 33px;
+    border: 1px solid #ECEEF0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.efficiency-item img {
+    padding: 0 17px 0 0;
+}
+
+.efficiency-item__title {
+    font: normal 600 22px/33px 'Montserrat';
+    color: #2F3A40;
+}
+
+.efficiency-item__text {
+    padding-top: 17px;
+}
+
+.efficiency-item1 {
+    max-width: 519px;
+    margin-right: 53px;
+    align-self: self-end;
+}
+
+.efficiency-item1::after {
+    content: '';
+    width: 85px;
+    height: 3px;
+    background-color: #B1C2FF;
+    display: block;
+    transform: rotate(-90deg);
+    bottom: -2.8em;
+    position: absolute;
+    left: 9.47em;
+}
+
+.efficiency-item2::after {
+    content: '';
+    width: 85px;
+    height: 3px;
+    background-color: #4465BB;
+    display: block;
+    transform: rotate(-90deg);
+    bottom: -2.8em;
+    position: absolute;
+    left: 22.47em;
+}
+
+.efficiency-item3::after {
+    content: '';
+    width: 85px;
+    height: 3px;
+    background-color: #5587E9;
+    display: block;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -11%;
+    left: 17.12em;
+}
+
+.efficiency-item2 {
+    max-width: 598px;
+}
+
+.efficiency-item2 .efficiency-item__title {
+    max-width: 350px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.efficiency-item3 {
+    max-width: 633px;
+    margin: 0 auto;
+}
+
+.efficiency-info__link {
+    font: normal 500 18px/28px 'Gilroy';
+    position: absolute;
+    bottom: 20px;
+    right: 28px;
+}
+
+.infographics-line {
+    width: 1170px;
+    height: 24px;
+    background: linear-gradient(90deg, #FFFFFF -7.09%, rgba(255, 255, 255, 0) 102.44%), #7FEF4A;
+    border-radius: 12px;
+    margin: 96px 0;
+    max-width: 100%;
+}
+
+.infographics-line__circle {
+    width: 88px;
+    height: 88px;
+}
+
+.infographics-line-wrap {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 100%;
+}
+
+/*section stages*/
+
+.stages {
+    padding: 61px 0 69px 0;
+    background: linear-gradient(270.71deg, #421089 30.05%, #25248C 78.09%), #1A2A8A;
+    position: relative;
+}
+
+.stages::before {
+    content: url('../images/stage-circle.svg');
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.stages::after {
+    content: url('../images/stage-square.svg');
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.stages h2 {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.stages-item {
+    background: #F7F9FC;
+    border: 1px solid #EDF0F7;
+    border-radius: 15px;
+    padding: 74px 17px 34px 24px;
+}
+
+.stages-item img {
+    position: absolute;
+    top: -35px;
+}
+
+.stages-item:nth-child(1), .stages-item:nth-child(2) {
+    margin-right: 37px;
+}
+
+/* section advantages*/
+
+.advantages-therapy {
+    padding: 75px 0 71px 0;
+}
+
+.advantages-therapy h2 {
+    color: #2F3A40;
+    margin-bottom: 44px;
+}
+
+.advantages-therapy p {
+    font: normal 500 18px/27px 'Gilroy';
+    color: #2F3A40;
+    text-align: center;
+}
+
+.advantages-therapy__wrapImg {
+    height: 150px;
+}
+
+.advantages-therapy__item {
+    max-width: 320px;
+}
+
+.advantages-therapy__item img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* section genomed team*/
+
+.genomed-team {
+    background: linear-gradient(290.04deg, #C6D7F6 -2.51%, rgba(241, 245, 255, 0) 53.7%), #F1F5FF;
+    padding: 63px 0 46px 0;
+}
+
+.genomed-team__text h2 {
+    margin-bottom: 25px;
+    max-width: 693px;
+}
+
+.genomed-team__text p:not(:nth-child(3)) {
+    margin: 0;
+}
+
+.genomed-team__text p:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.genomed-team__text {
+    margin-bottom: 64px;
+}
+
+.genomed-team__slider img {
+    max-width: 150px;
 }
