@@ -32,11 +32,44 @@ h2 {
     color: #2F3A40;
 }
 
+.btn-default {
+    display: block;
+    height: 49px;
+    border-radius: 6px;
+    font: normal 500 16px/18px 'Gilroy';
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btn-blue {
+    background: #335DFF;
+    color: #fff;
+}
+
+.btn-white {
+    background: #FFFFFF;
+    color: #335DFF;
+    border: 1px solid #335DFF;
+}
+
+button {
+    cursor: pointer;
+}
+
 /* header */
 
 .header {
     background: linear-gradient(270.71deg, #421089 30.05%, #25248C 78.09%), #1A2A8A;
     color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(270.71deg, #421089 30.05%, #25248C 78.09%), #1A2A8A;
 }
 
 .header-top {
@@ -133,26 +166,28 @@ h2 {
     opacity: 0.3;
 }
 
-.menu {
+.header-menu .menu {
     display: flex;
     justify-content: space-between;
 }
 
-.menu li a {
+.header-menu .menu li a {
     font: normal 400 14px/16px 'Gilroy';
     color: #fff;
-    padding-bottom: 12px;
+    padding-bottom: 21px;
     display: block;
+    border-bottom: 2px solid transparent;
 }
 
-.menu li a.active {
-    border-bottom: 2px solid #F1EEFF;
+.header-menu .menu li a:hover {
+    border-color: #F1EEFF;
 }
 
 .header-banner {
     padding-top: 84px;
     padding-bottom: 90px;
     position: relative;
+    margin-top: 163px;
 }
 
 .header-banner::after {
@@ -283,12 +318,34 @@ h2 {
 
 .consult-form__content {
     padding: 54px 0 26px 0;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    margin-left: 16%;
 }
 
-.consult-form::before {
+.consult-form__content-title {
+    flex: 1 1 475px;
+    max-width: 475px;
+    margin-right: 15px;
+}
+
+.consult-form__content-form {
+    flex: 1 1 475px;
+    max-width: 475px;
+    margin-left: auto;
+}
+
+.consult-form1::before {
     content: url(../images/doc.png);
     position: absolute;
     right: 70%;
+}
+
+.consult-form2::before {
+    content: url(../images/docWomen.png);
+    position: absolute;
+    right: 75%;
 }
 
 .consult-form__title {
@@ -300,6 +357,10 @@ h2 {
     padding-top: 20px;
 }
 
+.consult-form2 .consult-form__title {
+    padding-top: 0;
+}
+
 .consult-form__title span {
     font-weight: 700;
     display: inline-block;
@@ -308,7 +369,6 @@ h2 {
 .consult-form form {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
 }
 
 .consult-form form input:not([type='checkbox']) {
@@ -457,6 +517,7 @@ h2 {
     max-width: 519px;
     margin-right: 53px;
     align-self: self-end;
+    -webkit-align-self: flex-end;
 }
 
 .efficiency-item1::after {
@@ -604,6 +665,7 @@ h2 {
 
 .advantages-therapy__item {
     max-width: 320px;
+    margin: 0 auto;
 }
 
 .advantages-therapy__item img {
@@ -615,7 +677,67 @@ h2 {
 
 .genomed-team {
     background: linear-gradient(290.04deg, #C6D7F6 -2.51%, rgba(241, 245, 255, 0) 53.7%), #F1F5FF;
-    padding: 63px 0 46px 0;
+    padding: 63px 0 96px 0;
+    position: relative;
+    position: relative;
+}
+
+.genomed-team::before {
+    content: url('../images/white-line.svg');
+    position: absolute;
+    top: 43%;
+    z-index: 0;
+    right: 0;
+    overflow-x: hidden;
+    left: 0;
+}
+
+.circle-white {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circle-white1 {
+    width: 41px;
+    height: 41px;
+    top: 13%;
+    left: 3%;
+}
+
+.circle-white2 {
+    width: 10px;
+    height: 10px;
+    top: 30%;
+    left: 12%;
+}
+
+.circle-white3 {
+    width: 26px;
+    height: 26px;
+    left: 4%;
+    bottom: 33%;
+}
+
+.circle-white4 {
+    width: 26px;
+    height: 26px;
+    right: 4%;
+    top: 5%;
+}
+
+.circle-white5 {
+    width: 15px;
+    height: 15px;
+    right: 17%;
+    top: 44%;
+}
+
+.circle-white6 {
+    width: 10px;
+    height: 10px;
+    right: 2%;
+    bottom: 24%;
 }
 
 .genomed-team__text h2 {
@@ -635,6 +757,562 @@ h2 {
     margin-bottom: 64px;
 }
 
+.genomed-team__slider {
+    max-width: 1042px;
+    margin: 0 auto 0 auto;
+}
+
+.slider-item {
+    margin: 0 20px;
+    padding: 27px 33px 30px 33px;
+    background: #FFFFFF;
+    border: 1px solid rgba(225, 230, 237, 0.58);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
 .genomed-team__slider img {
     max-width: 150px;
+    margin: 0 auto 14px auto;
+}
+
+.slider-item__img-wrap {
+    position: relative;
+}
+
+.slider-item__img-wrap::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #88C961;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    right: 66px;
+    bottom: 7px;
+    display: block;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slider-item__title {
+    font: normal 600 18px/27px 'Montserrat';
+    color: #596363;
+    max-width: 200px;
+    margin: 0 auto 5px auto;
+    text-align: center;
+}
+
+.slider-item__subtitle {
+    font: normal 400 16px/24px 'Gilroy';
+    text-align: center;
+    margin: 0 auto;
+    max-width: 250px;
+    padding-bottom: 10px;
+}
+
+.slider-item__price, .slider-item__experience {
+    font: normal 400 16px/24px 'Gilroy';
+    display: inline-block;
+}
+
+.slider-item__price span, .slider-item__experience span {
+    font: normal 700 18px/27px 'Gilroy';
+    color: #335DFF;
+    display: block;
+}
+
+.slider-item__experience {
+    text-align: right;
+    float: right;
+}
+
+.slider-item a {
+    width: 100%;
+    margin: 15px auto 8px auto;
+}
+
+/* section treatment */
+
+.treatment {
+    padding: 76px 0 64px 0;
+}
+
+.treatment h2 {
+    margin-bottom: 26px;
+}
+
+.treatment h2 span {
+    display: block;
+    font-weight: 500;
+}
+
+.treatment .content-text {
+    max-width: 1015px;
+    margin-bottom: 68px;
+    position: relative;
+    padding-left: 22px;
+}
+
+.treatment .content-text::before {
+    content: '';
+    height: 100%;
+    width: 5px;
+    background-color: #335DFF;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.select-cancer {
+    margin-bottom: 20px;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    max-width: 392px;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-touch-callout: none;
+    border: 1px solid #EDF0F6;
+    width: 392px;
+    height: 59px;
+    font: normal 400 18px/35px 'Gilroy';
+    padding: 0 0 0 21px;
+    border-radius: 4px;
+    background: #F7F9FC;
+}
+
+.select .placeholder {
+    position: relative;
+    display: block;
+    z-index: 1;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2F3A40;
+    padding-top: 11px;
+}
+
+.select .placeholder:after {
+    position: absolute;
+    right: 1em;
+    top: 34%;
+    content: url('../images/select-icon.svg');
+    z-index: 10;
+}
+
+.select .placeholder.is-open .placeholder:after {
+    content: url('../images/select-icon.svg');
+}
+
+.select--white ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+    background: #F7F9FC;
+    border-radius: 4px;
+}
+
+.select.is-open ul {
+    display: block;
+}
+
+.select.select--white .placeholder {
+    background: #F7F9FC;
+}
+
+.select.select--white ul li {
+    display: block;
+    text-align: left;
+    padding: 0.8em 1em 0.8em 1em;
+    color: #2F3A40;
+    cursor: pointer;
+    font: normal 400 18px/35px 'Gilroy';
+    border: 1px solid #EDF0F6;
+}
+
+.select.select--white ul li:hover {
+    background-color: #fff;
+}
+
+.select-cancer select option {
+    font: normal 400 18px/27px 'Gilroy';
+}
+
+.select-cancer__tel {
+    display: inline-block;
+    font: normal 20px/30px 'Montserrat';
+    margin-left: 37px;
+}
+
+.select-cancer__tel span {
+    font-weight: 700;
+    color: #335DFF;
+}
+
+.products-slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-slider .product-item {
+    width: 270px;
+    height: 340px;
+}
+
+.product-item {
+    padding: 35px 16px 18px 16px;
+    background: #FFFFFF;
+    border: 1px solid #DFE4F1;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.freeByOms {
+    position: absolute;
+    right: -22px;
+    top: -40px;
+    width: 66px;
+    height: 66px;
+    background: #FD3636;
+    box-shadow: 0px 6px 25px -12px rgba(253, 54, 54, 0.5);
+    border-radius: 50%;
+    font: normal 700 8px/12px 'Montserrat';
+    text-align: center;
+    color: #FFFFFF;
+    padding: 23px 0 20px 0;
+}
+
+.product-item a {
+    margin-bottom: 8px;
+}
+
+.product-item__title {
+    min-height: 80px;
+    font: normal 500 16px/24px 'Gilroy';
+}
+
+.product-item__time {
+    font: normal 500 16px/24px 'Gilroy';
+    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.product-item__time span {
+    font-weight: 600;
+    color: #335DFF;
+}
+
+.product-item__price {
+    font: normal 600 24px/36px 'Montserrat';
+    margin-bottom: 19px;
+    color: #335DFF;
+}
+
+.targeted-therapy {
+    padding-top: 64px;
+    padding-bottom: 30px;
+    background: url('../images/clients.png') no-repeat;
+    background-position: right top;
+}
+
+.targeted-therapy h2 span {
+    display: block;
+    font-weight: 500;
+}
+
+.targeted-therapy h2 {
+    margin-bottom: 22px;
+}
+
+.targeted-therapy .callout-text {
+    margin: 32px 0 38px 0;
+    font: normal 600 23px/34px 'Gilroy';
+    color: #2F3A40;
+    background: #F7F9FC;
+    border: 1px solid #EAEFFD;
+    border-radius: 20px;
+    padding: 49px 23px 43px 178px;
+    position: relative;
+}
+
+.targeted-therapy .callout-text::before {
+    content: url('../images/triangle.svg');
+    position: absolute;
+    left: 40px;
+    top: 36px;
+}
+
+.targeted-therap__block1 {
+    max-width: 621px;
+}
+
+.targeted-therap__block2 {
+    margin-right: 25px;
+}
+
+.targeted-therap__block2, .targeted-therap__block3 {
+    display: inline-block;
+    max-width: 570px;
+    vertical-align: top;
+}
+
+/* section contacts*/
+
+.contacts {
+    padding: 60px 0 73px 0;
+}
+
+.contacts h2 {
+    text-transform: uppercase;
+    margin-bottom: 43px;
+}
+
+.contacts .contacts-map {
+    max-width: 595px;
+}
+
+#map {
+    max-width: 595px;
+    height: 693px
+}
+
+iframe {
+    border: none!important;
+}
+
+.contacts-info {
+    margin-left: 34px;
+}
+
+.contacts-info__tel {
+    max-width: 450px;
+    margin-bottom: 12px;
+    font: normal 400 16px/24px 'Gilroy';
+}
+
+.contacts-info__tel span {
+    font-weight: 600;
+    color: #335DFF;
+}
+
+.contacts-info__workTime {
+    font: normal 500 16px/24px 'Gilroy';
+    color: #2F3A40;
+    margin-bottom: 10px;
+}
+
+.contacts-info__workTime p {
+    margin-bottom: 0;
+}
+
+.contacts-info__text1 {
+    font: normal 600 16px/24px 'Gilroy';
+    color: #335DFF;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.contacts-info__text2 {
+    font: normal 600 16px/24px 'Gilroy';
+    color: #2F3A40;
+    margin-bottom: 16px;
+}
+
+.contacts-info__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-info__form input:not([type='checkbox']) {
+    margin-bottom: 10px;
+    border: 1px solid #E6EBEE;
+    border-radius: 5px;
+}
+
+.contacts-info__form input[type='text'], .contacts-info__form input[type='tel'] {
+    max-width: 220px;
+    height: 50px;
+    padding: 17px 0 17px 20px;
+}
+
+.contacts-info__form textarea {
+    border: 1px solid #E6EBEE;
+    border-radius: 5px;
+    padding: 13px 20px;
+    margin-bottom: 24px;
+    max-width: 480px;
+    max-height: 147px;
+}
+
+.contacts-info__form input::placeholder, .contacts-info__form input::placeholder, .contacts-info__form textarea::placeholder {
+    font: normal 400 14px/16px 'Gilroy';
+    color: #808689;
+}
+
+.contacts-info__form .btn-default {
+    max-width: 222px;
+    font: normal 600 14px/16px 'Gilroy';
+    margin-bottom: 26px;
+}
+
+.contacts-info__form .privPolicy {
+    max-width: 87%;
+}
+
+.contacts-info__form .privPolicy label a {
+    color: #335DFF;
+    text-decoration: underline;
+}
+
+/*section bottom form*/
+
+.application-form__text {
+    font: normal 700 30px/45px 'Montserrat';
+    color: #335DFF;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+}
+
+.application-form .form-block__text1 {
+    font: normal 700 24px/30px 'Montserrat';
+    color: #596363;
+    margin-bottom: 24px;
+    padding-top: 74px;
+}
+
+.application-form .form-block__text2 {
+    font: normal 400 16px/24px 'Gilroy';
+    margin-bottom: 120px;
+    max-width: 680px;
+    color: #596363;
+}
+
+.application-form .form-block__text2 span {
+    font-weight: 700;
+    color: #335DFF;
+}
+
+.application-form form input {
+    border: none;
+    border-bottom: 1px solid #989C9C;
+    margin-bottom: 70px;
+    font: normal 400 16px/24px 'Gilroy';
+    padding-bottom: 6px;
+    color: #858585;
+}
+
+.application-form form input[type='text'] {
+    margin-right: 66px;
+}
+
+.application-form form input .application-form form input::placeholder, .application-form form textarea::placeholder {
+    font: normal 400 16px/24px 'Gilroy';
+    color: #858585;
+}
+
+.application-form form textarea {
+    font: normal 400 16px/24px 'Gilroy';
+    border: none;
+    border-bottom: 1px solid #989C9C;
+    height: 34px;
+    width: 69%;
+    color: #858585;
+    margin-bottom: 52px;
+}
+
+.application-form form textarea::-webkit-resizer {
+    border: 10px solid transparent;
+    border-right: 10px solid #989C9C;
+    border-bottom: 10px solid #989C9C;
+}
+
+.application-form form button {
+    border: none;
+    width: 212px;
+    font: normal 600 14px/16px 'Gilroy';
+    margin-bottom: 58px;
+}
+
+.application-form form p {
+    font: normal 400 14px/21px 'Gilroy';
+    color: #929494;
+}
+
+.application-form form p a {
+    color: #6C2AC9;
+}
+
+footer {
+    background-color: #120A54;
+    color: #B7AEFB;
+    padding: 39px 0 27px 0;
+}
+
+.block-menu__title {
+    font: normal 700 18px/40px 'Gilroy';
+    margin-bottom: 9px;
+}
+
+.block-menu__menu li a {
+    color: #B7AEFB;
+    display: inline-block;
+    margin-bottom: 18px;
+    /*border-bottom: 1px solid #B7AEFB;*/
+    text-decoration: underline;
+    font: normal 400 16px/20px 'Gilroy';
+}
+
+.block-contasts {
+    font: normal 400 14px/21px 'Gilroy';
+    max-width: 275px;
+}
+
+.block-contasts p {
+    margin-bottom: 0;
+}
+
+.block-contasts__adddress {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.block-contasts__tel {
+    margin-bottom: 25px;
+}
+
+.block-contasts__tel a {
+    font: normal 700 20px/30px 'Gilroy';
+    color: #B7AEFB;
+}
+
+.block-contasts__mail a {
+    color: #B7AEFB;
+}
+
+.block-contasts__mail, .block-contasts__copyright p {
+    margin-bottom: 20px;
+}
+
+.block-contasts__link {
+    display: flex;
+    margin-top: 31px;
+}
+
+.block-contasts__link a:not(:last-child) {
+    padding-right: 27px;
 }

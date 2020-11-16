@@ -1,5 +1,4 @@
 @import url('fonts.css');
-/*@import url('../slick/slick-theme-custom.css');*/
-
+@import url('slick-theme-custom.css');
 @import url('style.css');
 @import url('media.css')

@@ -1,0 +1,129 @@
+@media (max-width: 1600px) {
+    .header-banner::before, .header-banner::after {
+        content: none;
+    }
+    .consult-form1::before {
+        right: 78%;
+    }
+    .targeted-therapy {
+        background-position-x: 264px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .stages::after, .stages::before {
+        content: none;
+    }
+    .consult-form2::before {
+        right: 83%;
+    }
+}
+
+@media (max-width: 1249.98px) {
+    .container {
+        max-width: 960px;
+    }
+    .efficiency::before, .efficiency::after, .efficiency-wrap::after, .consult-form1::before, .consult-form2::before {
+        content: none;
+    }
+    .consult-form__content {
+        margin-left: 0;
+    }
+    .consult-form__content-title {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+    .consult-form__content-form {
+        flex: 1 1 55%;
+        max-width: 55%;
+    }
+    .infographics-line {
+        display: none;
+    }
+    .efficiency-item1::after, .efficiency-item2::after, .efficiency-item3::after {
+        display: none;
+    }
+    .efficiency-item1, .efficiency-item2, .efficiency-item3 {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .stages-item:nth-child(1), .stages-item:nth-child(2) {
+        margin-right: 0;
+        height: 100%;
+    }
+    .slider-item__subtitle {
+        height: 110px;
+    }
+    .slider-item__img-wrap::after {
+        right: 43px;
+    }
+    .select-cancer .select {
+        margin-bottom: 20px;
+    }
+    .select-cancer__tel {
+        margin-left: 0;
+    }
+    .products-slider {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contacts .contacts-map, #map {
+        max-width: 100%;
+    }
+    .contacts-info {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .slider-item__img-wrap::after {
+        right: 123px;
+    }
+    .slick-prev-custom {
+        left: 0;
+    }
+    .slick-next-custom {
+        right: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    .header-banner__form p {
+        margin-bottom: 50px;
+    }
+    .header-banner__form, .video__text.genetic-disease {
+        margin-bottom: 30px;
+    }
+    .consult-form__content-title, .consult-form__content-form {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .consult-form__content {
+        flex-wrap: wrap;
+    }
+    .consult-form__title {
+        text-align: center;
+    }
+    .consult-form form {
+        justify-content: center;
+    }
+    .consult-form__content {
+        padding: 20px 0 26px 0;
+    }
+    .video, .efficiency {
+        padding: 50px 0 40px 0;
+    }
+    .privPolicy {
+        max-width: 450px;
+    }
+    .stages .col-12 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {}
