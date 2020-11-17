@@ -23,11 +23,15 @@
     .container {
         max-width: 960px;
     }
+    .header-banner {
+        margin-top: 125px;
+    }
     .efficiency::before, .efficiency::after, .efficiency-wrap::after, .consult-form1::before, .consult-form2::before {
         content: none;
     }
     .consult-form__content {
         margin-left: 0;
+        padding: 30px 0 26px 0;
     }
     .consult-form__content-title {
         flex: 1 1 45%;
@@ -54,9 +58,6 @@
     .slider-item__subtitle {
         height: 110px;
     }
-    .slider-item__img-wrap::after {
-        right: 43px;
-    }
     .select-cancer .select {
         margin-bottom: 20px;
     }
@@ -65,6 +66,18 @@
     }
     .products-slider {
         justify-content: space-evenly;
+    }
+    .application-form form textarea {
+        width: 88%;
+    }
+    .header-top__logo .logo__title::after {
+        top: 15px;
+    }
+    .application-form .form-block__text2 span {
+        display: inline-block;
+    }
+    .header-top__right-block {
+        align-items: start;
     }
 }
 
@@ -78,9 +91,6 @@
 }
 
 @media (max-width: 1100px) {
-    .slider-item__img-wrap::after {
-        right: 123px;
-    }
     .slick-prev-custom {
         left: 0;
     }
@@ -93,11 +103,47 @@
     .container {
         max-width: 720px;
     }
+    .header-top__logo .logo__title::after, .header-top__logo .logo__title2, .header-top__logo .logo__title {
+        display: none;
+    }
+    .header__menu-top {
+        left: 150%;
+        position: absolute;
+        -webkit-transition: left .3s ease;
+        -o-transition: left .3s ease;
+        transition: left .3s ease;
+    }
+    .header .burger {
+        display: block;
+    }
+    .header__menu-top-wrap {
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        justify-content: center;
+    }
+    .header__menu-top li {
+        padding-bottom: 30px;
+        position: relative;
+        width: 100%;
+    }
+    .header__menu-top li a {
+        border: none;
+    }
+    .header__menu-top li a {
+        vertical-align: middle;
+        color: #596363;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .header__menu-top li a:hover, .header__menu-top li a:active {
+        color: #A991FF;
+    }
     .header-banner__form p {
         margin-bottom: 50px;
     }
     .header-banner__form, .video__text.genetic-disease {
-        margin-bottom: 30px;
+        margin-bottom: 37px;
     }
     .consult-form__content-title, .consult-form__content-form {
         flex: 1 1 100%;
@@ -124,6 +170,312 @@
     .stages .col-12 {
         margin-bottom: 50px;
     }
+    .application-form img {
+        display: none;
+    }
+    .application-form form p {
+        margin-bottom: 50px;
+    }
+    .application-form form textarea {
+        width: 67%;
+    }
+    .block-contasts__link a:not(:last-child) {
+        padding-right: 15px;
+    }
+    h2, .efficiency h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    .header-top__city::before {
+        content: none;
+    }
+    .header-top-info-wrap {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header-top__right-block {
+        justify-content: flex-end;
+    }
+    .header-top__city {
+        padding: 0 0 5px 0;
+        text-align: right;
+    }
+    .products-slider {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #product-prev {
+        left: -70px;
+    }
+    #product-next {
+        right: -70px;
+    }
+    .products-slider .slick-dots {
+        bottom: -30px;
+    }
+    .freeByOms {
+        right: 0;
+        top: -30px;
+    }
+    .targeted-therapy {
+        background: none;
+    }
+    .targeted-therapy .callout-text {
+        padding: 149px 23px 43px 23px;
+    }
+    .block-menu {
+        text-align: center;
+    }
+    .block-contasts {
+        max-width: 100%;
+        text-align: center;
+    }
+    .block-contasts__link {
+        justify-content: center;
+    }
+    .header-banner__title h1, .header-banner__title span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .header-banner__form p {
+        font-size: 16px;
+    }
+    .header-banner__title {
+        padding-bottom: 30px;
+    }
+    .application-form__text {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .application-form .form-block__text1 {
+        padding-top: 0;
+    }
+    .application-form .form-block__text2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .header-banner__advantages, .circle-white, .application-form, .block-contasts__link {
+        display: none;
+    }
+    .header-top__logo img {
+        width: 81px;
+    }
+    .header-top {
+        padding: 15px 0 0 0;
+    }
+    .menu-line::after {
+        content: none;
+    }
+    .header-banner {
+        margin-top: 100px;
+    }
+    .select {
+        width: 290px;
+    }
+    .header-banner__title h1, .header-banner__title span, .genomed-team__text h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .header-banner {
+        margin-top: 78px;
+        padding-top: 42px;
+    }
+    .header-top__city {
+        font-size: 10px;
+        line-height: 12px;
+        order: 2;
+    }
+    .header-top_tel span {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .header-top_tel {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 5px;
+    }
+    .header .menu_wrap {
+        margin-left: 5px;
+    }
+    .header-top__right-block {
+        padding-top: 0;
+        justify-content: flex-end;
+        margin-left: 10px;
+    }
+    .header .responsive {
+        top: 0;
+    }
+    .header .burger_active .burger-line {
+        background: #596363;
+    }
+    .header-banner__form p, .stages h2 {
+        margin-bottom: 30px;
+    }
+    .header-banner {
+        padding-bottom: 0;
+    }
+    #product-prev, #product-next {
+        display: none !important;
+    }
+    .header__menu-top li a {
+        font-size: 17px;
+        padding-bottom: 0;
+    }
+    .header-banner__form .form-btn {
+        width: 290px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .genetic-disease__title, .advantages-therapy h2 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .genetic-disease__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .content-text, .advantages-therapy p, .targeted-therapy .callout-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .video__title, .efficiency-info__link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .consult-form__title {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 25px 0 0 0;
+    }
+    .consult-form__content-title {
+        margin-right: 0;
+    }
+    .consult-form form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .consult-form form input:not([type='checkbox']) {
+        width: 290px;
+        margin: 0 auto 12px auto;
+    }
+    .privPolicy {
+        max-width: 290px;
+        margin: 17px auto 10px auto;
+    }
+    .consult-form__btn {
+        width: 290px;
+    }
+    .video, .efficiency {
+        padding: 42px 0 33px 0;
+    }
+    .efficiency h2 {
+        margin-bottom: 20px;
+    }
+    .efficiency-info__link {
+        bottom: 9px;
+        left: 21px;
+    }
+    .efficiency-item img {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .efficiency-item__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .efficiency-item {
+        padding: 30px 20px 40px 20px;
+    }
+    .stages {
+        padding: 30px 0 57px 0;
+    }
+    .stages-slider__item {
+        padding-top: 25px;
+    }
+    .stages-item img {
+        top: 0;
+    }
+    .stages .col-12 {
+        margin-bottom: 0;
+    }
+    .stages .slick-dots {
+        bottom: -30px;
+    }
+    .advantages-therapy {
+        padding: 52px 0 41px 0;
+    }
+    .genomed-team__slider .slider-item {
+        padding: 25px;
+    }
+    .treatment {
+        padding: 43px 0 35px 0;
+    }
+    .treatment .content-text::before {
+        content: none;
+    }
+    .treatment .content-text {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .select-cancer {
+        margin-bottom: 0;
+    }
+    .select-cancer__tel {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .products-slider .slick-dots {
+        bottom: -12px;
+    }
+    .targeted-therapy {
+        padding: 39px 0 14px 0;
+    }
+    .targeted-therapy .callout-text::before {
+        width: 63px;
+        height: 63px;
+        left: 16px;
+        top: 15px;
+    }
+    .targeted-therapy .callout-text {
+        padding: 100px 12px 9px 12px;
+    }
+    .contacts {
+        padding: 14px 0 25px 0;
+    }
+    .contacts h2, .contacts-info__form textarea, .contacts-info__form .btn-default {
+        margin-bottom: 15px;
+    }
+    #map {
+        max-height: 212px;
+    }
+    .contacts-info__text1, .contacts-info__text2 {
+        text-align: center;
+    }
+    .contacts-info__form form {
+        width: 100%;
+    }
+    .contacts-info__form input[type='text'], .contacts-info__form input[type='tel'], .contacts-info__form textarea, .contacts-info__form .btn-default {
+        max-width: 100%;
+    }
+    .contacts-info__form .privPolicy {
+        max-width: 100%;
+        margin: 0;
+    }
+}

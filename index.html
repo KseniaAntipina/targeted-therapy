@@ -18,21 +18,33 @@
             <div class="container">
                 <div class="header-top">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-3 col-lg-5">
                             <div class="header-top__logo logo">
-                                <img src="./images/logo.svg" class="logo__img" alt="логотип">
+                                <a href="/"><img src="./images/logo.svg" class="logo__img" alt="логотип"></a>
                                 <div class="logo__title">Медико-генетический центр<br>
                                     Лаборатория молекулярной патологии</div>
                                 <div class="logo__title2">Заголовок</div>
                             </div>
                         </div>
-                        <div class="col-md-5 ml-auto">
+                        <div class="col-8 col-lg-5 ml-auto">
                             <div class="header-top__right-block">
-                                <div class="header-top__city">
-                                    <span>Ваш город:</span> Ростов-на-Дону(сменить)
+                                <div class="header-top-info-wrap">
+                                    <div class="header-top__city" data-fancybox="" href="#modal_town_new">
+                                        <span>Ваш город:</span>
+                                        <span id="city" data-city="" class="user-city"> Ростов-на-Дону (сменить)</span>
+
+                                    </div>
+                                    <div class="header-top_tel">
+                                        <span>Звонок бесплатный</span> 8 (800) <b>333-45-38</b>
+                                    </div>
                                 </div>
-                                <div class="header-top_tel">
-                                    <span>Звонок бесплатный</span> 8 (800) <b>333-45-38</b>
+                                <div class="menu_wrap">
+                                    <div class="burger" id="dropdownMenu">
+                                        <div class="burger-line first"></div>
+                                        <div class="burger-line second"></div>
+                                        <div class="burger-line third"></div>
+                                        <div class="burger-line fourth"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,15 +56,17 @@
                     <nav class="header-menu">
                         <div class="row">
                             <div class="col-md-12">
-                                <ul class="menu">
-                                    <li><a href="#efficiency">Эффективное лечение</a></li>
-                                    <li><a href="#stages">Этапы лечения</a></li>
-                                    <li><a href="#genomed-team" class="active">Комплексная научная группа</a></li>
-                                    <li><a href="#treatment">Подбор</a></li>
-                                    <li><a href="#targeted-therapy">Таргетная терапия</a></li>
-                                    <li><a href="#contacts">Контакты</a></li>
-                                    <li><a href="#application-form">Записаться</a></li>
-                                </ul>
+                                <div class="header__menu-top" id="myTopnav">
+                                    <ul class="header__menu-top-wrap">
+                                        <li><a href="#efficiency">Эффективное лечение</a></li>
+                                        <li><a href="#stages">Этапы лечения</a></li>
+                                        <li><a href="#genomed-team" class="active">Комплексная научная группа</a></li>
+                                        <li><a href="#treatment">Подбор</a></li>
+                                        <li><a href="#targeted-therapy">Таргетная терапия</a></li>
+                                        <li><a href="#contacts">Контакты</a></li>
+                                        <li><a href="#application-form">Записаться</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -68,37 +82,38 @@
                             <span>- САМЫЙ ТОЧНЫЙ СПОСОБ ЛЕЧЕНИЯ РАКА</span>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-5">
-                            <div class="header-banner__form">
-                                <p>Ответьте на <span>5 ВОПРОСОВ</span> для подбора
-                                    индивидуальной программы лечения
-                                    и получите <span>5% СКИДКУ</span> на наши услуги
-                                </p>
-                                <a href="javascript:void(0)" class="form-btn">Начать</a>
-                            </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="header-banner__form">
+                            <p>Ответьте на <span>5 ВОПРОСОВ</span> для подбора
+                                индивидуальной программы лечения
+                                и получите <span>5% СКИДКУ</span> на наши услуги
+                            </p>
+                            <a href="javascript:void(0)" class="form-btn">Начать</a>
                         </div>
-                        <div class="col-12 col-lg-7">
-                            <div class="header-banner__advantages">
-                                <div class="advantages__title">Онкодиагностика в Геномед - уверенность<br> в результате
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="header-banner__advantages">
+                            <div class="advantages__title">Онкодиагностика в Геномед - уверенность<br> в результате
+                            </div>
+                            <div class="advantages__icons advantages">
+                                <div class="advantages__item">
+                                    <img src="./images/icon-target.svg" alt="иконка">
+                                    <p>Genomed -<br> точный способ назначения терапии</p>
                                 </div>
-                                <div class="advantages__icons advantages">
-                                    <div class="advantages__item">
-                                        <img src="./images/icon-target.svg" alt="иконка">
-                                        <p>Genomed -<br> точный способ назначения терапии</p>
-                                    </div>
-                                    <div class="advantages__item">
-                                        <img src="./images/icon-laboratory.svg" alt="иконка">
-                                        <p>Собственная генетическая и ИГХ лаборатория</p>
-                                    </div>
-                                    <div class="advantages__item">
-                                        <img src="./images/oms-icon.svg" alt="иконка">
-                                        <p>Бесплатно по ОМС</p>
-                                    </div>
-                                    <div class="advantages__item">
-                                        <img src="./images/cooperation.svg" alt="иконка">
-                                        <p>Сотрудничество с зарубежными лабораторями</p>
-                                    </div>
+                                <div class="advantages__item">
+                                    <img src="./images/icon-laboratory.svg" alt="иконка">
+                                    <p>Собственная генетическая и ИГХ лаборатория</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./images/oms-icon.svg" alt="иконка">
+                                    <p>Бесплатно по ОМС</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./images/cooperation.svg" alt="иконка">
+                                    <p>Сотрудничество с зарубежными лабораторями</p>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +157,7 @@
                 <div class="consult-form__content-title">
                     <div class="consult-form__title">
                         <p>Не знаете с чего начать? Спросите нас!</p>
-                        <p>Первичная консультация специалиста<span>- БЕСПЛАТНО!</span></p>
+                        <p>Первичная консультация специалиста <span> - БЕСПЛАТНО!</span></p>
                     </div>
                 </div>
                 <div class="consult-form__content-form">
@@ -150,7 +165,7 @@
                         <input type="text" id="name" placeholder="Имя">
                         <input type="tel" id="phone" placeholder="Телефон" required>
                         <input type="email" id="email" placeholder="Ваш E-mail">
-                        <button type="submit" href="javascript:void(0)" class="consult-form__btn">Получить
+                        <button type="submit" class="consult-form__btn">Получить
                             консультацию</button>
                         <div class="privPolicy">
                             <input class="styled-checkbox privPolicy-check" id="styled-checkbox-1" type="checkbox"
@@ -232,8 +247,8 @@
     <section class="stages" id="stages">
         <div class="container">
             <h2>ЭТАПЫ ПРИ ПОДБОРЕ ЛЕЧЕНИЯ РАКА</h2>
-            <div class="row">
-                <div class="col-12 col-lg-4">
+            <div class="row stages-slider">
+                <div class="col-12 col-lg-4 stages-slider__item">
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon1.svg" alt="доктор">
                         Консультация онколога, или совместный консилиум (онколог + генетик) в ходе которого
@@ -241,7 +256,7 @@
                         <a href="javascript:void(0)">нажмите тут</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 stages-slider__item">
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon2.svg" alt="доктор">
                         Проведение генетического исследования для понимания природы именно Вашего рака и назначения
@@ -249,7 +264,7 @@
                         <a href="javascript:void(0)">нажав тут</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 stages-slider__item">
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon3.svg" alt="доктор">
                         Наша команда специалистов, которая состоит из онколога, генетика, биоинформатика принимают
@@ -579,7 +594,7 @@
     <section class="targeted-therapy" id="targeted-therapy">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12">
                     <h2><span>ТАРГЕТНАЯ ТЕРАПИЯ В МГЦ ГЕНОМЕД</span> - ШАГАЯ В БУДУЩЕЕ </h2>
                     <div class="targeted-therap__text">
                         <div class="content-text targeted-therap__block1">
@@ -616,36 +631,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Где сделать тест ДНК в Ростове на дону</h2>
+                    <h2>Где сделать тест ДНК в <span class="cityIn">Ростове на дону</span></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-6 col-12">
                     <div class="contacts-map">
+                        <!--временный скрипт заглушка , потом удалить -->
                         <script type="text/javascript">
                             YMaps.jQuery(function () {
                                 var map = new YMaps.Map(YMaps.jQuery("#map")[0]);
 
                                 map.setCenter(new YMaps.GeoPoint(39.697321, 47.235032), 15);
-                                var myPlacemark = new ymaps.Placemark([39.697321, 47.235032],
-                                    {
-                                        preset: 'islands#redMedicalIcon'
-                                    });
-                                map.geoObjects.add(myPlacemark);
+
                             })
                         </script>
-                        <div id="map"></div>
+                        <div id="map" class="map"></div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-12">
                     <div class="contacts-info">
                         <div class="contacts-info__tel">
-                            Сделать любой тест ДНК в Ростове на Дону очень просто, просто запишитесь на прием по
+                            Сделать любой тест ДНК в <span class="cityIn">Ростове на Дону</span> очень просто, просто
+                            запишитесь на прием по
                             телефону
                             <span>8 800 350 54 03</span> и прийдите в назначенное время.
                         </div>
                         <div class="contacts-info__workTime">
-                            <p>Режим работы мед центра в Ростове на Дону</p>
+                            <p>Режим работы мед центра в <span class="cityIn">Ростове на Дону</span></p>
                             <p> ПН-ПТ 08:00-19:00</p>
                             <p>СБ 09:00-17:00</p>
                             <p>ВС 09:00-15:00</p>
@@ -687,12 +700,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-8 col-xl-7">
+                <div class="col-12 col-md-12 col-lg-7">
                     <div class="form-block">
                         <div class="form-block__text1">Остались вопросы?</div>
                         <div class="form-block__text2">
                             Звоните нам по телефону федеральной
-                            горячей линии <span>+7 (800) 350-12-26</span><br> или обращайтесь к нашим менеджерам.
+                            горячей линии <span>+7 (800) 350-12-26</span> или обращайтесь к нашим менеджерам.
                         </div>
                         <form action="" method="POST">
                             <input type="text" placeholder="Ваше имя">
@@ -702,12 +715,12 @@
                             <button type="submit" href="javascript:void(0)"
                                 class="btn-default btn-blue">Отправить</button>
                             <p>Нажимая на кнопку «Отправить» Вы соглашаетесь с <a href="javascript:void(0)">политикой
-                                    конфиденциальности</a> и<br> даете согласие на обработку своих персональных данных
+                                    конфиденциальности</a> и даете согласие на обработку своих персональных данных
                             </p>
                         </form>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-5">
+                <div class="col-lg-5">
                     <img src="./images/bottom_form_img.png" alt="доктор">
                 </div>
             </div>

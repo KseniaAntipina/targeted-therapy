@@ -72,6 +72,95 @@ header {
     background: linear-gradient(270.71deg, #421089 30.05%, #25248C 78.09%), #1A2A8A;
 }
 
+/*menu burger*/
+
+.header .responsive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 46px;
+    background: #fff;
+    z-index: 1000;
+    right: 0;
+    top: 125px;
+    bottom: 0;
+    -webkit-transition: left .3s ease;
+    -o-transition: left .3s ease;
+    transition: left .3s ease;
+}
+
+.header .burger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    z-index: 10000;
+}
+
+.header .burger span {
+    font-family: 'Lato';
+    padding-left: 40px;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+.header .burger .burger-line {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 28px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+.header .burger .second, .header .burger .third {
+    top: 18px;
+    height: 0.15em;
+    transform: translateY(-50%);
+}
+
+.header .burger .fourth {
+    top: 26px;
+}
+
+.header .burger .first, .header .burger .fourth {
+    height: 0.15em;
+}
+
+.header .burger_active .first, .header .burger_active .fourth {
+    opacity: 0;
+}
+
+.header .burger_active .second {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.header .burger_active .third {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.header .burger_active .second:before, .header .burger_active .third:before {
+    content: none;
+}
+
+.header .menu_wrap {
+    width: 45px;
+    height: 37px;
+    margin-left: 30px;
+    z-index: 10000;
+}
+
+/*menu burger end*/
+
 .header-top {
     padding: 27px 0 33px 0;
 }
@@ -111,6 +200,11 @@ header {
     padding-left: 10px;
 }
 
+.header-top-info-wrap {
+    display: flex;
+    align-items: end;
+}
+
 .header-top__right-block {
     display: flex;
     justify-content: end;
@@ -123,6 +217,7 @@ header {
     font: normal 700 12px/15px 'Gilroy';
     position: relative;
     padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 .header-top__city::before {
@@ -132,10 +227,10 @@ header {
     background-color: #fff;
     position: absolute;
     left: -21px;
-    top: 0px;
+    top: 5px;
 }
 
-.header-top__city span {
+.header-top__city span:nth-child(1) {
     color: #A991FF;
     display: block;
 }
@@ -166,12 +261,12 @@ header {
     opacity: 0.3;
 }
 
-.header-menu .menu {
+.header__menu-top-wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.header-menu .menu li a {
+.header__menu-top li a {
     font: normal 400 14px/16px 'Gilroy';
     color: #fff;
     padding-bottom: 21px;
@@ -179,7 +274,7 @@ header {
     border-bottom: 2px solid transparent;
 }
 
-.header-menu .menu li a:hover {
+.header__menu-top li a:hover {
     border-color: #F1EEFF;
 }
 
@@ -321,7 +416,7 @@ header {
     display: flex;
     z-index: 10;
     position: relative;
-    margin-left: 16%;
+    margin-left: 17%;
 }
 
 .consult-form__content-title {
@@ -759,7 +854,7 @@ header {
 
 .genomed-team__slider {
     max-width: 1042px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .slider-item {
@@ -779,6 +874,8 @@ header {
 
 .slider-item__img-wrap {
     position: relative;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 .slider-item__img-wrap::after {
@@ -788,7 +885,7 @@ header {
     background: #88C961;
     border: 2px solid #FFFFFF;
     position: absolute;
-    right: 66px;
+    right: 19px;
     bottom: 7px;
     display: block;
     border-radius: 50%;
@@ -1050,10 +1147,15 @@ header {
 }
 
 .targeted-therapy .callout-text::before {
-    content: url('../images/triangle.svg');
+    content: '';
+    background-image: url('../images/triangle.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     left: 40px;
     top: 36px;
+    height: 95px;
+    width: 95px;
 }
 
 .targeted-therap__block1 {
@@ -1104,7 +1206,7 @@ iframe {
     font: normal 400 16px/24px 'Gilroy';
 }
 
-.contacts-info__tel span {
+.contacts-info__tel span:nth-child(2) {
     font-weight: 600;
     color: #335DFF;
 }
@@ -1180,6 +1282,10 @@ iframe {
 
 /*section bottom form*/
 
+.application-form {
+    overflow: hidden;
+}
+
 .application-form__text {
     font: normal 700 30px/45px 'Montserrat';
     color: #335DFF;
@@ -1197,7 +1303,7 @@ iframe {
 .application-form .form-block__text2 {
     font: normal 400 16px/24px 'Gilroy';
     margin-bottom: 120px;
-    max-width: 680px;
+    max-width: 560px;
     color: #596363;
 }
 
@@ -1229,7 +1335,7 @@ iframe {
     border: none;
     border-bottom: 1px solid #989C9C;
     height: 34px;
-    width: 69%;
+    width: 64%;
     color: #858585;
     margin-bottom: 52px;
 }
@@ -1250,6 +1356,7 @@ iframe {
 .application-form form p {
     font: normal 400 14px/21px 'Gilroy';
     color: #929494;
+    max-width: 595px;
 }
 
 .application-form form p a {
