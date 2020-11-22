@@ -64,9 +64,6 @@
     .select-cancer__tel {
         margin-left: 0;
     }
-    .products-slider {
-        justify-content: space-evenly;
-    }
     .application-form form textarea {
         width: 88%;
     }
@@ -79,6 +76,30 @@
     .header-top__right-block {
         align-items: start;
     }
+    .form__answer {
+        flex-direction: column;
+    }
+    .form__answer .inputText {
+        margin: 20px 0 0 0;
+    }
+    .nextBtn::before {
+        right: 20px;
+    }
+    .prevBtn::before {
+        left: 20px;
+    }
+    .form__answer-item label {
+        width: 380px;
+    }
+    .form__nav {
+        width: 790px;
+    }
+    .products-slider__item:not(:nth-child(4n)) {
+        margin-right: 0px;
+    }
+    .products-slider__item:not(:nth-child(3n)) {
+        margin-right: 60px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -87,6 +108,23 @@
     }
     .contacts-info {
         margin: 20px 0 0 0;
+    }
+    .product-popup {
+        width: 772px;
+        height: 506px;
+    }
+    .product-popup__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .product-popup__content {
+        height: 200px;
+    }
+    .product-popup__price.product-item__price {
+        margin-bottom: 10px;
+    }
+    #product1 {
+        width: 180px;
     }
 }
 
@@ -186,6 +224,38 @@
         font-size: 24px;
         line-height: 36px;
     }
+    .survey-form__item {
+        padding: 30px 30px 30px 40px;
+    }
+    .form__answer {
+        flex-wrap: nowrap;
+        height: 330px;
+    }
+    .survey-form__item {
+        height: 650px;
+    }
+    .nextBtn::before {
+        right: 12px;
+    }
+    .prevBtn::before {
+        left: 12px;
+    }
+    .form__nav {
+        width: 620px;
+        left: 42px;
+    }
+    .product-popup {
+        width: 672px;
+    }
+    .slider-block {
+        justify-content: space-around;
+    }
+    .products-slider__item {
+        margin-top: 20px;
+    }
+    .products-slider__item:not(:nth-child(3n)) {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -206,9 +276,19 @@
         padding: 0 0 5px 0;
         text-align: right;
     }
-    .products-slider {
-        max-width: 300px;
-        margin: 0 auto;
+    .treatment {
+        padding: 76px 0 44px 0;
+    }
+    .slider-block {
+        max-width: 350px;
+        margin: 20px auto 20px auto;
+    }
+    .products-slider__item {
+        margin: 0;
+    }
+    .products-slider__item:not {}
+    .select-cancer {
+        margin-bottom: 0;
     }
     #product-prev {
         left: -70px;
@@ -216,12 +296,57 @@
     #product-next {
         right: -70px;
     }
-    .products-slider .slick-dots {
+    .slider-block .slick-dots {
         bottom: -30px;
+    }
+    .slider-block .slick-track {
+        padding: 20px 0;
+    }
+    .product-popup__title {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+    .product-popup__price.product-item__price {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+    .product-popup__time.product-item__time {
+        font-size: 14px;
+        line-height: 12px;
+        margin-bottom: 5px;
+    }
+    .product-popup__content {
+        margin-bottom: 10px;
+        padding-right: 10px;
+        height: 180px;
+        font: normal 400 14px/20px 'Gilroy';
+    }
+    #product1 {
+        width: 130px;
+        height: 35px;
+        padding: 9px;
+        font-size: 14px;
+    }
+    .scroll-wrapper {
+        margin-bottom: 10px;
+    }
+    .scrollbar-inner>.scroll-element.scroll-y {
+        right: 0;
+    }
+    .js-modal-close {
+        top: 9px;
+        right: -2px;
     }
     .freeByOms {
         right: 0;
-        top: -30px;
+        top: -20px;
+        width: 56px;
+        height: 56px;
+        padding: 21px 0 20px 0;
+        font: normal 700 7px/10px 'Montserrat';
+        z-index: 1000;
     }
     .targeted-therapy {
         background: none;
@@ -258,6 +383,46 @@
     }
     .application-form .form-block__text2 {
         margin-bottom: 30px;
+    }
+    .survey-form__title {
+        font: normal 800 32px/30px 'Montserrat';
+        margin-bottom: 15px;
+    }
+    .survey-form__question-number {
+        font: normal 600 22px/24px 'Montserrat';
+    }
+    .nextBtn::before, .prevBtn::before {
+        display: none;
+    }
+    .form__answer-item label {
+        width: 350px;
+        height: 60px;
+    }
+    .closeBtn, .closeBtn2 {
+        top: 15px;
+        right: 18px;
+    }
+    .form__answer {
+        height: 285px;
+    }
+    .survey-form__item {
+        height: 570px;
+    }
+    .survey-form__question {
+        height: 66px;
+    }
+    .form__nav {
+        width: 440px;
+    }
+    .product-popup {
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        height: 380px;
+        top: 50%;
+    }
+    .show {
+        display: block;
     }
 }
 
@@ -477,5 +642,63 @@
     .contacts-info__form .privPolicy {
         max-width: 100%;
         margin: 0;
+    }
+    .survey-form__title {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .survey-form__question-number {
+        font-size: 19px;
+        line-height: 14px;
+    }
+    .survey-form__question {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .survey-form__item {
+        padding: 30px 20px 30px 20px;
+    }
+    .form__answer-item label, .form__answer .inputText {
+        width: 240px;
+        height: 55px;
+    }
+    .new-select {
+        width: 240px;
+        padding-left: 13px;
+    }
+    .form__answer .inputText {
+        padding: 17px 0 19px 12px;
+    }
+    .new-select__list {
+        width: 240px;
+    }
+    .header-banner {
+        padding-bottom: 30px;
+    }
+    .discount-block {
+        width: 100%;
+    }
+    .discount-block__subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .discount-block__text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .discount-block__form input, .discount-block__btn {
+        width: 85%;
+    }
+    .discount-block__btn {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .form__nav {
+        width: 90%;
+        left: 25px;
+    }
+    .form__answer-item label {
+        font-size: 16px;
     }
 }

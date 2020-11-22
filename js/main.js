@@ -1,3 +1,5 @@
+/*слайдер врачей геномеда */
+
 $(document).ready(function () {
     $('.genomed-team__slider').slick({
         dots: true,
@@ -47,6 +49,7 @@ dropdownMenu.onclick = function myFunction() {
     }
 }
 
+/*скрипт закрывающий меню при клике на якорную ссылку (когда меню на весь экран) */
 
 if (window.innerWidth < 992) {
     $(".header__menu-top-wrap li a").click(function () {
@@ -61,11 +64,6 @@ if (window.innerWidth < 992) {
     });
 }
 
-
-
-
-
-
 /*скрипт скролла шапки*/
 
 $(".header__menu-top-wrap li a").click(function () {
@@ -75,27 +73,113 @@ $(".header__menu-top-wrap li a").click(function () {
     return false;
 });
 
-
 /*кастомный select*/
 
-$('.select').on('click', '.placeholder', function () {
-    var parent = $(this).closest('.select');
-    if (!parent.hasClass('is-open')) {
-        parent.addClass('is-open');
-        $('.select.is-open').not(parent).removeClass('is-open');
-    } else {
-        parent.removeClass('is-open');
+$('.selectCity, .selectDisease , .selectDisease2').each(function (index, element) {
+    const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        selectedOption = selectOption.filter(':selected'),
+        duration = 250; // длительность анимации 
+    _this.hide();
+    _this.wrap('<div class="select"></div>');
+    $('<div>', {
+        class: 'new-select',
+        text: _this.children('option:disabled').text()
+    }).insertAfter(_this);
+
+    const selectHead = _this.next('.new-select');
+    $('<div>', {
+        class: 'new-select__list'
+    }).insertAfter(selectHead);
+
+    const selectList = selectHead.next('.new-select__list');
+    for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item',
+            html: $('<span>', {
+                text: selectOption.eq(i).text()
+            })
+        })
+            .attr('data-value', selectOption.eq(i).val())
+            .appendTo(selectList);
     }
-}).on('click', 'ul>li', function () {
-    var parent = $(this).closest('.select');
-    parent.removeClass('is-open').find('.placeholder').text($(this).text());
+    const selectItem = selectList.find('.new-select__item');
+    selectList.slideUp(0);
+    selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+            $(this).addClass('on');
+            selectList.slideDown(duration);
+
+            selectItem.on('click', function () {
+                var chooseItem = $(this).data('value');
+                $('select').val(chooseItem).attr('selected', 'selected');
+                selectHead.text($(this).find('span').text());
+                selectList.slideUp(duration);
+                selectHead.removeClass('on');
+
+                /*код отвечающий за показ слайдера */
+                if ($(element).hasClass('selectDisease')) {
+                    let slidersProduct = document.querySelectorAll('.slider-block')
+                    for (let i = 0; i < slidersProduct.length; i++) {
+                        if (slidersProduct[i].classList.contains(chooseItem)) {
+                            slidersProduct[i].classList.add('show');
+                            slidersProduct[i].classList.remove('hide');
+                            /*след 4 строки нужны для того чтобы слик слайдер не съезжал при смене блоков. Новые слайдеры добавлять сюда.*/
+                            $('.all-products-slider').slick('setPosition');
+                            $('.stomach-slider').slick('setPosition');
+                            $('.lungs-slider').slick('setPosition');
+                            $('.breast-slider').slick('setPosition');
+                        }
+                        else {
+                            slidersProduct[i].classList.remove('show');
+                            slidersProduct[i].classList.add('hide');
+                        }
+                    }
+                    /*конец*/
+                }
+
+            });
+
+        } else {
+            $(this).removeClass('on');
+            selectList.slideUp(duration);
+        }
+    });
+
 });
 
 
-/*скрипт для слайдера*/
+
+/*скрипт для слайдера товаров*/
 
 $(document).ready(function () {
-    $('.products-slider').slick({
+    $('.all-products-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
+        responsive: [
+            {
+                breakpoint: 10000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    });
+});
+
+
+$(document).ready(function () {
+    $('.stomach-slider').slick({
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -119,6 +203,57 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $('.lungs-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
+        responsive: [
+            {
+                breakpoint: 10000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    });
+});
+
+
+$(document).ready(function () {
+    $('.breast-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
+        responsive: [
+            {
+                breakpoint: 10000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    });
+});
+
+/*слайдер этапов */
+
+$(document).ready(function () {
     $('.stages-slider').slick({
         dots: true,
         arrows: false,
@@ -139,3 +274,128 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+/* форма 5 вопросов */
+
+let closeForm = document.querySelector('.closeBtn');
+let closeModal = document.querySelector('.closeBtn2');
+let surveyForm = document.getElementById('formSurvey');
+let surveyFormOpen = document.getElementById('surveyFormOpen');
+
+closeForm.onclick = () => {
+    surveyForm.style.display = 'none';
+}
+closeModal.onclick = () => {
+    surveyForm.style.display = 'none';
+}
+surveyFormOpen.onclick = () => {
+    surveyForm.style.display = 'block';
+}
+
+
+var currentTab = 0; // текущая вкладка
+showTab(currentTab);
+
+function showTab(n) {
+    let x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    if (n == 0) {
+        document.querySelector(".prevBtn").style.display = "none";
+    } else {
+        document.querySelector(".prevBtn").style.display = "block";
+    }
+    //закрывает большой таб, когда открыто последнее окно с предложением о скидке
+    if (n == 5) {
+        closeForm.style.display = 'none';
+        document.querySelector('.form__nav').style.display = 'none';
+    }
+    let indicator = document.querySelector('.indicator-nav-blue')
+    let indicatorWidth = 20;
+    for (i = 0; i <= n; i++) {
+        indicatorWidth = indicatorWidth + 20;
+        indicator.style.width = indicatorWidth + '%';
+    }
+    for (i = n; i >= n; i--) {
+        indicatorWidth = indicatorWidth - 20;
+        indicator.style.width = indicatorWidth + '%';
+    }
+}
+
+function nextPrev(n) {
+
+    let x = document.getElementsByClassName("tab");
+    if (n == 1 && !validateForm()) return false;
+    x[currentTab].style.display = "none";
+    currentTab = currentTab + n;
+    if (currentTab >= x.length) {
+        document.getElementById("formSurvey").submit();
+        return false;
+    }
+    showTab(currentTab);
+}
+
+function validateForm() {
+    return true; // return the valid status
+}
+
+/*маска телефона */
+
+document.querySelectorAll('.phone-mask').forEach((e) => {
+    const phoneMask = IMask(e, { mask: '+{7}(000)000-00-00' })
+})
+
+
+
+/*popups */
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var modalButtons = document.querySelectorAll('.js-open-modal'),
+        closeButtons = document.querySelectorAll('.js-modal-close');
+
+    modalButtons.forEach(function (item) {
+
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            var modalId = this.getAttribute('data-modal'),
+                modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+            modalElem.classList.add('active');
+
+        });
+    });
+
+    closeButtons.forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            var parentModal = this.closest('.modal');
+            parentModal.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+
+    document.body.addEventListener('keyup', function (e) {
+        var key = e.keyCode;
+        if (key == 27) {
+            document.querySelector('.modal.active').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        };
+    }, false);
+
+    overlay.addEventListener('click', function () {
+        document.querySelector('.modal.active').classList.remove('active');
+        this.classList.remove('active');
+    });
+
+});
+
+
+/*скроллбар */
+
+jQuery(document).ready(function () {
+    jQuery('.scrollbar-inner').scrollbar();
+});
+
+
+
+
