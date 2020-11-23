@@ -155,6 +155,7 @@ header {
     height: 37px;
     margin-left: 30px;
     z-index: 10000;
+    display: none;
 }
 
 .header-top {
@@ -196,14 +197,9 @@ header {
     padding-left: 10px;
 }
 
-.header-top-info-wrap {
-    display: flex;
-    align-items: end;
-}
-
 .header-top__right-block {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-top: 12px;
     align-items: end;
 }
@@ -214,6 +210,11 @@ header {
     position: relative;
     padding-bottom: 3px;
     padding-top: 5px;
+}
+
+#header-menu__city {
+    display: none;
+    font: normal 700 12px/15px 'Gilroy';
 }
 
 .header-top__city::before {
@@ -241,13 +242,18 @@ header {
 .header-top_tel {
     text-align: right;
     font: normal 400 16px/19px 'Gilroy';
+    color: #fff;
 }
 
 .header-top_tel span {
     display: block;
     font: normal 400 12px/14px 'Gilroy';
-    color: #A991FF;
     padding-bottom: 5px;
+    color: #A991FF;
+}
+
+.header-top_tel a {
+    color: #fff;
 }
 
 .menu-line {
@@ -286,6 +292,10 @@ header {
     padding-bottom: 90px;
     position: relative;
     margin-top: 163px;
+}
+
+.header-banner-block2 {
+    display: none;
 }
 
 .header-banner::after {
@@ -1017,6 +1027,9 @@ header {
     user-select: none;
     font: normal 400 18px/35px 'Gilroy';
     color: #2F3A40;
+    height: 170px;
+    overflow-y: scroll;
+    н
 }
 
 .new-select__list.on {
@@ -1483,4 +1496,8 @@ footer {
 
 .block-contasts__link a:not(:last-child) {
     padding-right: 27px;
+}
+
+.float-phone {
+    display: none;
 }

@@ -28,17 +28,16 @@
                         </div>
                         <div class="col-8 col-lg-5 ml-auto">
                             <div class="header-top__right-block">
-                                <div class="header-top-info-wrap">
-                                    <div class="header-top__city">
-                                        <a data-fancybox="" href="#modal_town_new">
-                                            <span>Ваш город:</span>
-                                            <span id="city" data-city="" class="user-city"> Ростов-на-Дону
-                                                (сменить)</span>
-                                        </a>
-                                    </div>
-                                    <div class="header-top_tel">
-                                        <span>Звонок бесплатный</span> 8 (800) <b>333-45-38</b>
-                                    </div>
+                                <div class="header-top__city">
+                                    <a data-fancybox="" href="#modal_town_new">
+                                        <span>Ваш город:</span>
+                                        <span id="city" data-city="" class="user-city"> Ростов-на-Дону
+                                            (сменить)</span>
+                                    </a>
+                                </div>
+                                <div class="header-top_tel">
+                                    <a href="tel:+78003334538"><span>Звонок бесплатный</span> 8 (800)
+                                        <b>333-45-38</b></a>
                                 </div>
                                 <div class="menu_wrap">
                                     <div class="burger" id="dropdownMenu">
@@ -60,6 +59,15 @@
                             <div class="col-md-12">
                                 <div class="header__menu-top" id="myTopnav">
                                     <ul class="header__menu-top-wrap">
+                                        <li>
+                                            <div id="header-menu__city">
+                                                <a data-fancybox="" href="#modal_town_new">
+                                                    <span>Ваш город:</span>
+                                                    <span id="city" data-city="" class="user-city"> Ростов-на-Дону
+                                                        (сменить)</span>
+                                                </a>
+                                            </div>
+                                        </li>
                                         <li><a href="#efficiency">Эффективное лечение</a></li>
                                         <li><a href="#stages">Этапы лечения</a></li>
                                         <li><a href="#genomed-team" class="active">Комплексная научная группа</a></li>
@@ -77,191 +85,214 @@
         </header>
         <div class="header-banner">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-11">
-                        <div class="header-banner__title">
-                            <h1>ТАРГЕТНАЯ ТЕРАПИЯ В МГЦ ГЕНОМЕД</h1>
-                            <span>- САМЫЙ ТОЧНЫЙ СПОСОБ ЛЕЧЕНИЯ РАКА</span>
+                <div class="header-banner-block1">
+                    <div class="row">
+                        <div class="col-12 col-md-11">
+                            <div class="header-banner__title">
+                                <h1>ТАРГЕТНАЯ ТЕРАПИЯ В МГЦ ГЕНОМЕД</h1>
+                                <span>- САМЫЙ ТОЧНЫЙ СПОСОБ ЛЕЧЕНИЯ РАКА</span>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <div class="header-banner__form">
+                                <p>Ответьте на <span>5 ВОПРОСОВ</span> для подбора
+                                    индивидуальной программы лечения
+                                    и получите <span>5% СКИДКУ</span> на наши услуги
+                                </p>
+                                <a href="javascript:void(0)" class="form-btn" id="surveyFormOpen">Начать</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="header-banner__advantages">
+                                <div class="advantages__title">Онкодиагностика в Геномед - уверенность<br> в результате
+                                </div>
+                                <div class="advantages__icons advantages">
+                                    <div class="advantages__item">
+                                        <img src="./images/icon-target.svg" alt="иконка">
+                                        <p>Genomed -<br> точный способ назначения терапии</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/icon-laboratory.svg" alt="иконка">
+                                        <p>Собственная генетическая и ИГХ лаборатория</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/oms-icon.svg" alt="иконка">
+                                        <p>Бесплатно по ОМС</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <img src="./images/cooperation.svg" alt="иконка">
+                                        <p>Сотрудничество с зарубежными лабораторями</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <div class="header-banner__form">
-                            <p>Ответьте на <span>5 ВОПРОСОВ</span> для подбора
-                                индивидуальной программы лечения
-                                и получите <span>5% СКИДКУ</span> на наши услуги
-                            </p>
-                            <a href="javascript:void(0)" class="form-btn" id="surveyFormOpen">Начать</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="header-banner__advantages">
-                            <div class="advantages__title">Онкодиагностика в Геномед - уверенность<br> в результате
-                            </div>
-                            <div class="advantages__icons advantages">
-                                <div class="advantages__item">
-                                    <img src="./images/icon-target.svg" alt="иконка">
-                                    <p>Genomed -<br> точный способ назначения терапии</p>
+                <div class="header-banner-block2">
+                    <div class="row">
+                        <div class="col">
+                            <form action="" id="formSurvey">
+                                <div class="survey-form" id="surveyForm">
+                                    <div class="survey-form__item tab">
+                                        <div class="survey-form__title">
+                                            Ответьте на 5 вопросов
+                                        </div>
+                                        <div class="survey-form__question-number">
+                                            Вопрос 1
+                                        </div>
+                                        <div class="survey-form__question">
+                                            Ваш пол
+                                        </div>
+                                        <div class="form__answer">
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="gender" type="radio" id="gender-man"
+                                                    value="man" checked>
+                                                <label for="gender-man">Мужчина</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="gender" type="radio" id="gender-women"
+                                                    value="women">
+                                                <label for="gender-women">Женщина</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="survey-form__item tab">
+                                        <div class="survey-form__title">
+                                            Ответьте на 5 вопросов
+                                        </div>
+                                        <div class="survey-form__question-number">
+                                            Вопрос 2
+                                        </div>
+                                        <div class="survey-form__question">
+                                            Ваш город
+                                        </div>
+                                        <div class="form__answer">
+                                            <select class="select selectCity">
+                                                <option disabled>Выберете ваш город</option>
+                                                <option value="StPetersburg">Санкт-Петербург</option>
+                                                <option value="Moscow">Москва</option>
+                                                <option value="Rostov">Ростов-на-Дону</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="survey-form__item tab">
+                                        <div class="survey-form__title">
+                                            Ответьте на 5 вопросов
+                                        </div>
+                                        <div class="survey-form__question-number">
+                                            Вопрос 3
+                                        </div>
+                                        <div class="survey-form__question">
+                                            Какой вид рака вас интересует ?
+                                        </div>
+                                        <div class="form__answer">
+                                            <select class="select selectDisease2">
+                                                <option disabled>Выпадающий список</option>
+                                                <option value="1">Меланома</option>
+                                                <option value="2">Рак легкого</option>
+                                                <option value="3">Рак желудка</option>
+                                                <option value="3">Рак молочной железы</option>
+                                                <option value="3">Рак печени</option>
+                                                <option value="3">Рак поджелудочной</option>
+                                                <option value="3">Рак предстательной</option>
+                                                <option value="3">Рак толстой кишки</option>
+                                                <option value="3">Рак яичников</option>
+                                                <option value="3">Другие виды</option>
+                                            </select>
+                                            <input type="text" class="inputText" placeholder="Впишите свой вариант">
+                                        </div>
+                                    </div>
+                                    <div class="survey-form__item tab">
+                                        <div class="survey-form__title">
+                                            Ответьте на 5 вопросов
+                                        </div>
+                                        <div class="survey-form__question-number">
+                                            Вопрос 4
+                                        </div>
+                                        <div class="survey-form__question">
+                                            Как давно начато лечение?
+                                        </div>
+                                        <div class="form__answer">
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="time" type="radio" id="option1"
+                                                    value="" checked>
+                                                <label for="option1">Еще не лечился</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="time" type="radio" id="option2"
+                                                    value="">
+                                                <label for="option2">1-3 года</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="time" type="radio" id="option3"
+                                                    value="">
+                                                <label for="option3">Менее года</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="time" type="radio" id="option4"
+                                                    value="">
+                                                <label for="option4">Более 3 лет</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="survey-form__item tab ">
+                                        <div class="survey-form__title">
+                                            Ответьте на 5 вопросов
+                                        </div>
+                                        <div class="survey-form__question-number">
+                                            Вопрос 5
+                                        </div>
+                                        <div class="survey-form__question">
+                                            Были ли у Вас в роду случаи онкологии?
+                                        </div>
+                                        <div class="form__answer">
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="cases" type="radio" id="option51"
+                                                    value="" checked>
+                                                <label for="option51">Да</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="cases" type="radio" id="option52"
+                                                    value="">
+                                                <label for="option52">Нет</label>
+                                            </div>
+                                            <div class="form__answer-item">
+                                                <input class="custom-radio" name="cases" type="radio" id="option53"
+                                                    value="">
+                                                <label for="option53">Не знаю</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__nav">
+                                        <button type="button" class="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                                        <div class="indicator-nav"><span class="indicator-nav-blue"></span></div>
+                                        <button type="button" class="nextBtn" onclick="nextPrev(1)">Вперед</button>
+                                    </div>
+                                    <div class="closeBtn"> <img src="./images/close.png" alt="закрыть"> </div>
                                 </div>
-                                <div class="advantages__item">
-                                    <img src="./images/icon-laboratory.svg" alt="иконка">
-                                    <p>Собственная генетическая и ИГХ лаборатория</p>
+                                <div class="tab discount-block">
+                                    <div class="discount-block__title">Отлично!</div>
+                                    <div class="discount-block__subtitle">Мы подобрали для Вас персональное предложение
+                                    </div>
+                                    <div class="discount-block__text">и не забыли о промокоде на 5% скидки! Укажите Ваши
+                                        контактные
+                                        данные и мы вышлем Вам их на почту</div>
+                                    <div class="discount-block__form">
+                                        <input type="text" placeholder="Имя" required>
+                                        <input type="tel" placeholder="Телефон" class="phone-mask" required>
+                                        <input type="email" placeholder="Ваш E-mail">
+                                        <button type="submit" class="discount-block__btn">Получить
+                                            предложение и скидку</button>
+                                    </div>
+                                    <div class="closeBtn2"> <img src="./images/close.png" alt="закрыть"> </div>
                                 </div>
-                                <div class="advantages__item">
-                                    <img src="./images/oms-icon.svg" alt="иконка">
-                                    <p>Бесплатно по ОМС</p>
-                                </div>
-                                <div class="advantages__item">
-                                    <img src="./images/cooperation.svg" alt="иконка">
-                                    <p>Сотрудничество с зарубежными лабораторями</p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <form action="" id="formSurvey">
-                    <div class="survey-form" id="surveyForm">
-                        <div class="survey-form__item tab">
-                            <div class="survey-form__title">
-                                Ответьте на 5 вопросов
-                            </div>
-                            <div class="survey-form__question-number">
-                                Вопрос 1
-                            </div>
-                            <div class="survey-form__question">
-                                Ваш пол
-                            </div>
-                            <div class="form__answer">
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="gender" type="radio" id="gender-man" value="man"
-                                        checked>
-                                    <label for="gender-man">Мужчина</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="gender" type="radio" id="gender-women"
-                                        value="women">
-                                    <label for="gender-women">Женщина</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="survey-form__item tab">
-                            <div class="survey-form__title">
-                                Ответьте на 5 вопросов
-                            </div>
-                            <div class="survey-form__question-number">
-                                Вопрос 2
-                            </div>
-                            <div class="survey-form__question">
-                                Ваш город
-                            </div>
-                            <div class="form__answer">
-                                <select class="select selectCity">
-                                    <option disabled>Выберете ваш город</option>
-                                    <option value="StPetersburg">Санкт-Петербург</option>
-                                    <option value="Moscow">Москва</option>
-                                    <option value="Rostov">Ростов-на-Дону</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="survey-form__item tab">
-                            <div class="survey-form__title">
-                                Ответьте на 5 вопросов
-                            </div>
-                            <div class="survey-form__question-number">
-                                Вопрос 3
-                            </div>
-                            <div class="survey-form__question">
-                                Какой вид рака вас интересует ?
-                            </div>
-                            <div class="form__answer">
-                                <select class="select selectDisease2">
-                                    <option disabled>Выпадающий список</option>
-                                    <option value="1">1</option>
-                                    <option value="2">1</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <input type="text" class="inputText" placeholder="Впишите свой вариант">
-                            </div>
-                        </div>
-                        <div class="survey-form__item tab">
-                            <div class="survey-form__title">
-                                Ответьте на 5 вопросов
-                            </div>
-                            <div class="survey-form__question-number">
-                                Вопрос 4
-                            </div>
-                            <div class="survey-form__question">
-                                Как давно начато лечение?
-                            </div>
-                            <div class="form__answer">
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="time" type="radio" id="option1" value="" checked>
-                                    <label for="option1">Еще не лечился</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="time" type="radio" id="option2" value="">
-                                    <label for="option2">1-3 года</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="time" type="radio" id="option3" value="">
-                                    <label for="option3">Менее года</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="time" type="radio" id="option4" value="">
-                                    <label for="option4">Более 3 лет</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="survey-form__item tab ">
-                            <div class="survey-form__title">
-                                Ответьте на 5 вопросов
-                            </div>
-                            <div class="survey-form__question-number">
-                                Вопрос 5
-                            </div>
-                            <div class="survey-form__question">
-                                Были ли у Вас в роду случаи онкологии?
-                            </div>
-                            <div class="form__answer">
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="cases" type="radio" id="option51" value=""
-                                        checked>
-                                    <label for="option51">Да</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="cases" type="radio" id="option52" value="">
-                                    <label for="option52">Нет</label>
-                                </div>
-                                <div class="form__answer-item">
-                                    <input class="custom-radio" name="cases" type="radio" id="option53" value="">
-                                    <label for="option53">Не знаю</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__nav">
-                            <button type="button" class="prevBtn" onclick="nextPrev(-1)">Назад</button>
-                            <div class="indicator-nav"><span class="indicator-nav-blue"></span></div>
-                            <button type="button" class="nextBtn" onclick="nextPrev(1)">Вперед</button>
-                        </div>
-                        <div class="closeBtn"> <img src="./images/close.png" alt="закрыть"> </div>
-                    </div>
-                    <div class="tab discount-block">
-                        <div class="discount-block__title">Отлично!</div>
-                        <div class="discount-block__subtitle">Мы подобрали для Вас персональное предложение</div>
-                        <div class="discount-block__text">и не забыли о промокоде на 5% скидки! Укажите Ваши контактные
-                            данные и мы вышлем Вам их на почту</div>
-                        <div class="discount-block__form">
-                            <input type="text" placeholder="Имя" required>
-                            <input type="tel" placeholder="Телефон" class="phone-mask" required>
-                            <input type="email" placeholder="Ваш E-mail">
-                            <button type="submit" class="discount-block__btn">Получить
-                                предложение и скидку</button>
-                        </div>
-                        <div class="closeBtn2"> <img src="./images/close.png" alt="закрыть"> </div>
-                    </div>
-                </form>
             </div>
         </div>
     </section>
@@ -1107,7 +1138,7 @@
             </div>
         </div>
     </footer>
-
+    <div class="float-phone"><a href="tel:+78003334538"><img src="./images/purple-tel.svg" alt="телефон"></a></div>
     <!-- scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

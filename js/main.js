@@ -280,17 +280,22 @@ $(document).ready(function () {
 
 let closeForm = document.querySelector('.closeBtn');
 let closeModal = document.querySelector('.closeBtn2');
-let surveyForm = document.getElementById('formSurvey');
 let surveyFormOpen = document.getElementById('surveyFormOpen');
+let headerBanner = document.querySelector('.header-banner-block1');
+let surveyForm = document.querySelector('.header-banner-block2');
+
 
 closeForm.onclick = () => {
     surveyForm.style.display = 'none';
+    headerBanner.style.display = 'block';
 }
 closeModal.onclick = () => {
     surveyForm.style.display = 'none';
+    headerBanner.style.display = 'block';
 }
 surveyFormOpen.onclick = () => {
     surveyForm.style.display = 'block';
+    headerBanner.style.display = 'none';
 }
 
 

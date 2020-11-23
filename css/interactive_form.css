@@ -1,7 +1,3 @@
-#formSurvey {
-    display: none;
-}
-
 .survey-form {
     position: relative;
 }
@@ -12,7 +8,6 @@
     background: #FFFFFF;
     border-radius: 15px;
     padding: 53px 69px 35px 71px;
-    margin-top: 50px;
     position: relative;
 }
 
@@ -215,7 +210,6 @@
     background: #FFFFFF;
     border: 5px solid #335DFF;
     text-align: center;
-    margin-top: 50px;
     position: relative;
 }
 

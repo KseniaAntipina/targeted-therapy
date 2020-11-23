@@ -160,6 +160,9 @@
         height: 100%;
         justify-content: center;
     }
+    .header .menu_wrap {
+        display: block;
+    }
     .header__menu-top li {
         padding-bottom: 30px;
         position: relative;
@@ -265,12 +268,11 @@
     .header-top__city::before {
         content: none;
     }
-    .header-top-info-wrap {
-        flex-direction: column;
-        align-items: flex-end;
-    }
     .header-top__right-block {
         justify-content: flex-end;
+    }
+    .header-top_tel {
+        min-width: 145px;
     }
     .header-top__city {
         padding: 0 0 5px 0;
@@ -286,7 +288,6 @@
     .products-slider__item {
         margin: 0;
     }
-    .products-slider__item:not {}
     .select-cancer {
         margin-bottom: 0;
     }
@@ -438,10 +439,22 @@
         display: none;
     }
     .header-top__logo img {
-        width: 81px;
+        width: 90px;
     }
     .header-top {
-        padding: 15px 0 0 0;
+        padding: 15px 0;
+    }
+    #header-menu__city {
+        display: block;
+    }
+    #header-menu__city a span {
+        color: #A991FF;
+        line-height: 20px;
+        text-transform: none;
+    }
+    #header-menu__city a span:nth-child(1) {
+        display: block;
+        font-weight: 700;
     }
     .menu-line::after {
         content: none;
@@ -457,22 +470,11 @@
         line-height: 36px;
     }
     .header-banner {
-        margin-top: 78px;
+        margin-top: 53px;
         padding-top: 42px;
     }
-    .header-top__city {
-        font-size: 10px;
-        line-height: 12px;
-        order: 2;
-    }
-    .header-top_tel span {
-        font-size: 10px;
-        line-height: 12px;
-    }
-    .header-top_tel {
-        font-size: 13px;
-        line-height: 17px;
-        margin-bottom: 5px;
+    .header-top__city, .header-top_tel {
+        display: none;
     }
     .header .menu_wrap {
         margin-left: 5px;
@@ -700,5 +702,28 @@
     }
     .form__answer-item label {
         font-size: 16px;
+    }
+    .float-phone {
+        position: fixed;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        display: block;
+        top: calc(100% - 80px);
+        right: 20px;
+        z-index: 10000;
+    }
+    .float-phone img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .header-banner__title h1 {
+        font: normal 400 42px/58px "Montserrat";
+        margin-bottom: 8px;
+        color: #a580ff;
+        background: none;
     }
 }
