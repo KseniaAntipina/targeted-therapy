@@ -212,6 +212,18 @@ header {
     padding-top: 5px;
 }
 
+.header-top__city .change_city {
+    display: block;
+    color: #fff;
+}
+.header-top__city .city-title {
+    color: #A991FF;
+}
+
+#city {
+    color: #fff;
+}
+
 #header-menu__city {
     display: none;
     font: normal 700 12px/15px 'Gilroy';
@@ -227,15 +239,7 @@ header {
     top: 5px;
 }
 
-.header-top__city a span:nth-child(1) {
-    color: #A991FF;
-}
-
-.header-top__city a span:nth-child(2) {
-    color: #fff;
-}
-
-.header-top__city span:nth-child(1) {
+.header-top__city span {
     display: block;
 }
 

@@ -452,9 +452,19 @@
         line-height: 20px;
         text-transform: none;
     }
-    #header-menu__city a span:nth-child(1) {
-        display: block;
+    #header-menu__city .change_city {
+
         font-weight: 700;
+        color: #A991FF;
+        margin-bottom: 0;
+        text-transform: none;
+        line-height: 20px;
+    }
+    #header-menu__city .city-title {
+        display: block;
+    }
+    #city, .change_city {
+        display: inline-block;
     }
     .menu-line::after {
         content: none;

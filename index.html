@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Таргетная терапия</title>
 </head>
@@ -30,9 +32,9 @@
                             <div class="header-top__right-block">
                                 <div class="header-top__city">
                                     <a data-fancybox="" href="#modal_town_new">
-                                        <span>Ваш город:</span>
-                                        <span id="city" data-city="" class="user-city"> Ростов-на-Дону
-                                            (сменить)</span>
+                                        <span class="city-title">Ваш город:</span>
+                                        <span id="city" data-city="" class="user-city">Ростов-на-Дону</span>
+                                        <p class="change_city">(сменить)</p>
                                     </a>
                                 </div>
                                 <div class="header-top_tel">
@@ -62,9 +64,9 @@
                                         <li>
                                             <div id="header-menu__city">
                                                 <a data-fancybox="" href="#modal_town_new">
-                                                    <span>Ваш город:</span>
-                                                    <span id="city" data-city="" class="user-city"> Ростов-на-Дону
-                                                        (сменить)</span>
+                                                    <span class="city-title">Ваш город:</span>
+                                                    <span id="city" data-city="" class="user-city">Ростов-на-Дону</span>
+                                                    <p class="change_city">(сменить)</p>
                                                 </a>
                                             </div>
                                         </li>
@@ -149,12 +151,12 @@
                                         <div class="form__answer">
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="gender" type="radio" id="gender-man"
-                                                    value="man" checked>
+                                                    value="мужчина" checked>
                                                 <label for="gender-man">Мужчина</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="gender" type="radio" id="gender-women"
-                                                    value="women">
+                                                    value="женщина">
                                                 <label for="gender-women">Женщина</label>
                                             </div>
                                         </div>
@@ -170,12 +172,7 @@
                                             Ваш город
                                         </div>
                                         <div class="form__answer">
-                                            <select class="select selectCity">
-                                                <option disabled>Выберете ваш город</option>
-                                                <option value="StPetersburg">Санкт-Петербург</option>
-                                                <option value="Moscow">Москва</option>
-                                                <option value="Rostov">Ростов-на-Дону</option>
-                                            </select>
+                                            <input type="text" class="inputText" placeholder="Укажите город">
                                         </div>
                                     </div>
                                     <div class="survey-form__item tab">
@@ -191,16 +188,16 @@
                                         <div class="form__answer">
                                             <select class="select selectDisease2">
                                                 <option disabled>Выпадающий список</option>
-                                                <option value="1">Меланома</option>
-                                                <option value="2">Рак легкого</option>
-                                                <option value="3">Рак желудка</option>
-                                                <option value="3">Рак молочной железы</option>
-                                                <option value="3">Рак печени</option>
-                                                <option value="3">Рак поджелудочной</option>
-                                                <option value="3">Рак предстательной</option>
-                                                <option value="3">Рак толстой кишки</option>
-                                                <option value="3">Рак яичников</option>
-                                                <option value="3">Другие виды</option>
+                                                <option value="Меланома">Меланома</option>
+                                                <option value="Рак легкого">Рак легкого</option>
+                                                <option value="Рак желудка">Рак желудка</option>
+                                                <option value="Рак молочной железы">Рак молочной железы</option>
+                                                <option value="Рак печени">Рак печени</option>
+                                                <option value="Рак поджелудочной">Рак поджелудочной</option>
+                                                <option value="Рак предстательной">Рак предстательной</option>
+                                                <option value="Рак толстой кишки">Рак толстой кишки</option>
+                                                <option value="Рак яичников">Рак яичников</option>
+                                                <option value="Другие виды">Другие виды</option>
                                             </select>
                                             <input type="text" class="inputText" placeholder="Впишите свой вариант">
                                         </div>
@@ -218,22 +215,22 @@
                                         <div class="form__answer">
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="time" type="radio" id="option1"
-                                                    value="" checked>
+                                                    value="Еще не лечился" checked>
                                                 <label for="option1">Еще не лечился</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="time" type="radio" id="option2"
-                                                    value="">
+                                                    value="1-3 года">
                                                 <label for="option2">1-3 года</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="time" type="radio" id="option3"
-                                                    value="">
+                                                    value="Менее года">
                                                 <label for="option3">Менее года</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="time" type="radio" id="option4"
-                                                    value="">
+                                                    value="Более 3 лет">
                                                 <label for="option4">Более 3 лет</label>
                                             </div>
                                         </div>
@@ -251,17 +248,17 @@
                                         <div class="form__answer">
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="cases" type="radio" id="option51"
-                                                    value="" checked>
+                                                    value="да" checked>
                                                 <label for="option51">Да</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="cases" type="radio" id="option52"
-                                                    value="">
+                                                    value="нет">
                                                 <label for="option52">Нет</label>
                                             </div>
                                             <div class="form__answer-item">
                                                 <input class="custom-radio" name="cases" type="radio" id="option53"
-                                                    value="">
+                                                    value="не знаю">
                                                 <label for="option53">Не знаю</label>
                                             </div>
                                         </div>
@@ -977,15 +974,7 @@
             <div class="row">
                 <div class="col-xl-6 col-12">
                     <div class="contacts-map">
-                        <!--временный скрипт заглушка , потом удалить -->
-                        <script type="text/javascript">
-                            YMaps.jQuery(function () {
-                                var map = new YMaps.Map(YMaps.jQuery("#map")[0]);
 
-                                map.setCenter(new YMaps.GeoPoint(39.697321, 47.235032), 15);
-
-                            });
-                        </script>
                         <div id="map" class="map"></div>
                     </div>
                 </div>
@@ -1138,11 +1127,103 @@
             </div>
         </div>
     </footer>
+    <div class="modal-block" id="modal_town_new">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-12"><h5 >Выберите свой город</h5></div>
+            </div>
+
+
+            <div class="row mo-office">
+                <div class="col-lg-3"><div class="city-item" id="city_list1" data-showonmap="" data-town="Москва">Москва</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list2" data-showonmap="" data-town="Санкт-Петербург">Санкт-Петербург</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list3" data-showonmap="" data-town="Ростов-на-Дону">Ростов-на-Дону</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list4" data-showonmap="" data-town="Пермь">Пермь</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list5" data-showonmap="" data-town="Екатеринбург">Екатеринбург</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list6" data-showonmap="" data-town="Казань">Казань</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list7" data-showonmap="" data-town="Волгоград">Волгоград</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list8" data-showonmap="" data-town="Самара">Самара</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list9" data-showonmap="" data-town="Челябинск">Челябинск</div></div>
+                <div class="col-lg-3"><div class="city-item" id="city_list10" data-showonmap="" data-town="Новосибирск">Новосибирск</div></div>
+            </div>
+
+            <div class="row kdl-office">
+                <div class="col-lg-3">
+                    <div class="city-item kdl_mo" data-town="Астрахань">Астрахань</div>
+                    <div class="city-item kdl_mo" data-town="Армавир">Армавир</div>
+                    <div class="city-item kdl_mo" data-town="Балашиха">Балашиха</div>
+                    <div class="city-item kdl_mo" data-town="Березники">Березники</div>
+                    <div class="city-item kdl_mo" data-town="Барнаул">Барнаул</div>
+                    <div class="city-item kdl_mo" data-town="Балаково">Балаково</div>
+
+                    <div class="city-item kdl_mo" data-town="Волжский">Волжский</div>
+                    <div class="city-item kdl_mo" data-town="Домодедово">Домодедово</div>
+                    <div class="city-item kdl_mo" data-town="Долгопрудный">Долгопрудный</div>
+
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="city-item kdl_mo" data-town="Краснодар">Краснодар</div>
+                    <div class="city-item kdl_mo" data-town="Краснознаменск">Краснознаменск</div>
+                    <div class="city-item kdl_mo" data-town="Королев">Королев</div>
+                    <div class="city-item kdl_mo" data-town="Котельники">Котельники</div>
+                    <div class="city-item kdl_mo" data-town="Кемерово">Кемерово</div>
+                    <div class="city-item kdl_mo" data-town="Мытищи">Мытищи</div>
+                    <div class="city-item kdl_mo" data-town="Майкоп">Майкоп</div>
+                    <div class="city-item kdl_mo" data-town="Нижневартовск">Нижневартовск</div>
+                    <div class="city-item kdl_mo" data-town="Нижний Ломов">Нижний Ломов</div>
+                </div>
+
+
+                <div class="col-lg-3">
+
+                    <div class="city-item kdl_mo" data-town="Новороссийск">Новороссийск</div>
+                    <div class="city-item kdl_mo" data-town="Одинцово">Одинцово</div>
+                    <div class="city-item kdl_mo" data-town="Подольск">Подольск</div>
+                    <div class="city-item kdl_mo" data-town="Пенза">Пенза</div>
+                    <div class="city-item kdl_mo" data-town="Реутов">Реутов</div>
+                    <div class="city-item kdl_mo" data-town="Сургут">Сургут</div>
+                    <div class="city-item kdl_mo" data-town="Саратов">Саратов</div>
+                    <div class="city-item kdl_mo" data-town="Таганрог">Таганрог</div>
+                    <div class="city-item kdl_mo" data-town="Туапсе">Туапсе</div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="city-item kdl_mo" data-town="Тверь">Тверь</div>
+                    <div class="city-item kdl_mo" data-town="Тюмень">Тюмень</div>
+                    <div class="city-item kdl_mo" data-town="Химки">Химки</div>
+                    <div class="city-item kdl_mo" data-town="Щелково">Щелково</div>
+                    <div class="city-item kdl_mo" data-town="Энгельс">Энгельс</div>
+                    <div class="city-item kdl_mo" data-town="Уфа">Уфа</div>
+                    <div class="city-item kdl_mo" data-town="Ярославль">Ярославль</div>
+
+                </div>
+            </div>
+            <p><strong>Или укажите в поле</strong></p>
+            <input type="text" class="city_block" name="city" autocomplete="off" data-kladr-type="city">
+            <a href="javascript:void(0);" class="city_block_button">Выбрать</a>
+            <br>
+        </div>
+    </div>
+
     <div class="float-phone"><a href="tel:+78003334538"><img src="./images/purple-tel.svg" alt="телефон"></a></div>
     <!-- scripts -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=294e81d6-8d10-4123-8911-0fa6253f70b1&lang=ru_RU"
+        type="text/javascript">  </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+    <script src="./js/city.js"></script>
     <script src="./js/jquery.scrollbar-gh-pages/jquery.scrollbar.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/main.js"></script>
