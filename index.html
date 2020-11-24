@@ -20,12 +20,12 @@
             <div class="container">
                 <div class="header-top">
                     <div class="row">
-                        <div class="col-3 col-lg-5">
+                        <div class="col-3 col-lg-7">
                             <div class="header-top__logo logo">
                                 <a href="/"><img src="./images/logo.svg" class="logo__img" alt="логотип"></a>
                                 <div class="logo__title">Медико-генетический центр<br>
                                     Лаборатория молекулярной патологии</div>
-                                <div class="logo__title2">Заголовок</div>
+                                <div class="logo__title2">Таргетная терапия в Геномед</div>
                             </div>
                         </div>
                         <div class="col-8 col-lg-5 ml-auto">
@@ -61,14 +61,12 @@
                             <div class="col-md-12">
                                 <div class="header__menu-top" id="myTopnav">
                                     <ul class="header__menu-top-wrap">
-                                        <li>
-                                            <div id="header-menu__city">
-                                                <a data-fancybox="" href="#modal_town_new">
-                                                    <span class="city-title">Ваш город:</span>
-                                                    <span id="city" data-city="" class="user-city">Ростов-на-Дону</span>
-                                                    <p class="change_city">(сменить)</p>
-                                                </a>
-                                            </div>
+                                        <li id="header-menu__city">
+                                            <a data-fancybox="" href="#modal_town_new">
+                                                <span class="city-title">Ваш город:</span>
+                                                <span id="city" data-city="" class="user-city">Ростов-на-Дону</span>
+                                                <p class="change_city">(сменить)</p>
+                                            </a>
                                         </li>
                                         <li><a href="#efficiency">Эффективное лечение</a></li>
                                         <li><a href="#stages">Этапы лечения</a></li>
@@ -172,7 +170,8 @@
                                             Ваш город
                                         </div>
                                         <div class="form__answer">
-                                            <input type="text" class="inputText" placeholder="Укажите город">
+                                            <input type="text" class="inputText inputTextCity"
+                                                placeholder="Укажите город">
                                         </div>
                                     </div>
                                     <div class="survey-form__item tab">
@@ -187,7 +186,7 @@
                                         </div>
                                         <div class="form__answer">
                                             <select class="select selectDisease2">
-                                                <option disabled>Выпадающий список</option>
+                                                <option disabled>Выберите вид рака</option>
                                                 <option value="Меланома">Меланома</option>
                                                 <option value="Рак легкого">Рак легкого</option>
                                                 <option value="Рак желудка">Рак желудка</option>
@@ -199,7 +198,7 @@
                                                 <option value="Рак яичников">Рак яичников</option>
                                                 <option value="Другие виды">Другие виды</option>
                                             </select>
-                                            <input type="text" class="inputText" placeholder="Впишите свой вариант">
+                                            <input type="text" class="inputText" placeholder="Свой вариант">
                                         </div>
                                     </div>
                                     <div class="survey-form__item tab">
@@ -367,7 +366,7 @@
                                     самые последние достижения в области молекулярной генетики рака на пользу нашим
                                     пациентам.
                                 </div>
-                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                                <!-- <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a> -->
                             </div>
                             <div class="efficiency-item efficiency-item2">
                                 <img src="./images/loupe.svg" alt="иконка">
@@ -384,7 +383,7 @@
                                     диагностика является важным этапом в комплексном подходе к диагностике и лечению
                                     рака,
                                     наряду с работой врачей клиницистов и патомофологов. </div>
-                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                                <!-- <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a> -->
                             </div>
                             <div class="infographics-line">
                                 <div class="infographics-line-wrap">
@@ -407,7 +406,7 @@
                                     лежит принцип выявления генетической мишени, которая заставляет опухоль развиваться
                                     и
                                     подбора лекарств, влияющих на данную мишень.</div>
-                                <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a>
+                                <!-- <a href="javascript:void(0)" class="efficiency-info__link">Подробнее</a> -->
                             </div>
                         </div>
                     </div>
@@ -423,24 +422,29 @@
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon1.svg" alt="доктор">
                         Консультация онколога, или совместный консилиум (онколог + генетик) в ходе которого
-                        разбирается Ваш случай и подбирается необходимое исследование. Для записи на консультцию
-                        <a href="javascript:void(0)">нажмите тут</a>
+                        разбирается Ваш случай и подбирается необходимое исследование. <a
+                            href="https://genomed.ru/priem-vracha-onkologa-v-czentre-genomed/"
+                            target="_blank">Записаться на
+                            консультацию</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 stages-slider__item">
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon2.svg" alt="доктор">
                         Проведение генетического исследования для понимания природы именно Вашего рака и назначения
-                        лечения. Список исследований для проведения таргетной терапии можно посмотреть
-                        <a href="javascript:void(0)">нажав тут</a>
+                        лечения. <a href="https://genomed.ru/priem-vracha-onkologa-v-czentre-genomed/"
+                            target="_blank">Список
+                            исследований для проведения таргетной терапии</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 stages-slider__item">
                     <div class="stages-item content-text">
                         <img src="./images/stage-icon3.svg" alt="доктор">
                         Наша команда специалистов, которая состоит из онколога, генетика, биоинформатика принимают
-                        решение о самом эффективном лечении именно Вашего рака. Записаться на совместный консилиум
-                        <a href="javascript:void(0)">можно тут </a>
+                        решение о самом эффективном лечении именно Вашего рака. <a
+                            href="https://genomed.ru/priem-vracha-onkologa-v-czentre-genomed/"
+                            target="_blank">Записаться
+                            на совместный консилиум</a>
                     </div>
                 </div>
             </div>
@@ -540,8 +544,8 @@
                             <div class="slider-item__experience">
                                 Стаж<span>10 лет</span>
                             </div>
-                            <a href="javascript:void(0)" class="btn-default btn-blue">Записаться</a>
-                            <a href="javascript:void(0)" class="btn-default btn-white">О враче</a>
+                            <a href="#consultationModal3" class="btn-default btn-blue" data-fancybox="">Записаться</a>
+                            <a href="[[~1748]]" class="btn-default btn-white">О враче</a>
                         </div>
                         <div class="slider-item">
                             <div class="slider-item__img-wrap">
@@ -555,8 +559,8 @@
                             <div class="slider-item__experience">
                                 Стаж<span>20 лет</span>
                             </div>
-                            <a href="javascript:void(0)" class="btn-default btn-blue">Записаться</a>
-                            <a href="javascript:void(0)" class="btn-default btn-white">О враче</a>
+                            <a href="#consultationModal3" class="btn-default btn-blue" data-fancybox="">Записаться</a>
+                            <a href="[[~2911]]" class="btn-default btn-white">О враче</a>
                         </div>
                         <div class="slider-item">
                             <div class="slider-item__img-wrap">
@@ -571,8 +575,8 @@
                             <div class="slider-item__experience">
                                 Стаж<span>10 лет</span>
                             </div>
-                            <a href="javascript:void(0)" class="btn-default btn-blue">Записаться</a>
-                            <a href="javascript:void(0)" class="btn-default btn-white">О враче</a>
+                            <a href="#consultationModal3" class="btn-default btn-blue" data-fancybox="">Записаться</a>
+                            <a href="[[~2664]]" class="btn-default btn-white">О враче</a>
                         </div>
                         <div class="slider-item">
                             <div class="slider-item__img-wrap">
@@ -587,8 +591,8 @@
                             <div class="slider-item__experience">
                                 Стаж<span>10 лет</span>
                             </div>
-                            <a href="javascript:void(0)" class="btn-default btn-blue">Записаться</a>
-                            <a href="javascript:void(0)" class="btn-default btn-white">О враче</a>
+                            <a href="#consultationModal3" class="btn-default btn-blue" data-fancybox="">Записаться</a>
+                            <a href="[[~1748]]" class="btn-default btn-white">О враче</a>
                         </div>
                         <div class="slider-item">
                             <div class="slider-item__img-wrap">
@@ -603,8 +607,8 @@
                             <div class="slider-item__experience">
                                 Стаж<span>10 лет</span>
                             </div>
-                            <a href="javascript:void(0)" class="btn-default btn-blue">Записаться</a>
-                            <a href="javascript:void(0)" class="btn-default btn-white">О враче</a>
+                            <a href="#consultationModal3" class="btn-default btn-blue" data-fancybox="">Записаться</a>
+                            <a href="[[~2664]]" class="btn-default btn-white">О враче</a>
                         </div>
                     </div>
                 </div>
@@ -655,43 +659,7 @@
                                 12 500 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default js-open-modal"
-                                data-modal="1">Подробнее</a>
-                            <div class="product-popup product1 modal" data-modal="1">
-                                <div class="product-popup__title">Рак легких, базовая панель (гены EGFR, KRAS, NRAS,
-                                    BRAF)</div>
-                                <div class="scrollbar-inner">
-                                    <div class="product-popup__content">
-                                        <p>Тест позволяет установить наличие мутаций в 4
-                                            генах, ассоциированных с раком легкого.</p>
-                                        <p>Список генов, входящих в панель: EGFR, KRAS, NRAS, BRAF</p>
-                                        <p> Базовая панель позволяет определить мутации в генах, имеющих наибольшую
-                                            частоту
-                                            клинически релеватнных мутаций, и подобрать лечение ингибиторами
-                                            тирозинкиназы
-                                            EGFR и ингибиторами BRAF.</p>
-                                        <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
-                                            немелкоклеточного
-                                            рака легкого. Наличие таких активирующих мутаций является показанием для
-                                            назначения таргетной противоопухолевой терапии специфическими
-                                            ингибиторами
-                                            EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
-                                            немелкоклеточным раком легкого перед назначением т</p>
-                                        <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
-                                            немелкоклеточного
-                                            рака легкого. Наличие таких активирующих мутаций является показанием для
-                                            назначения таргетной противоопухолевой терапии специфическими
-                                            ингибиторами
-                                            EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
-                                            немелкоклеточным раком легкого перед назначением т</p>
-                                    </div>
-                                </div>
-                                <button class="js-modal-close"><img src="./images/close.svg" alt=""></button>
-                                <div class="product-popup__time product-item__time">Сроки:<span> 14 дней</span>
-                                </div>
-                                <div class="product-popup__price product-item__price">12 500 ₽</div>
-                                <a href="javascript:void(0)" class="btn-blue btn-default" id="product1">Заказать</a>
-                            </div>
+                            <a href="#product1" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">Тест ОнкоКарта
@@ -701,7 +669,7 @@
                                 29 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">Тест Онкоскан
@@ -711,7 +679,7 @@
                                 49 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">Онкокарта, 60 генов (+BRCA1, BRCA2, PALB2)
@@ -721,7 +689,7 @@
                                 39 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">Мониторинг минимальной остаточной болезни.
@@ -733,7 +701,7 @@
                                 75 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">FoundationOne CDx
@@ -743,7 +711,7 @@
                                 395 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="freeByOms">БЕСПЛАТНО по ОМС</div>
@@ -754,7 +722,7 @@
                                 11 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="all-products-slider__item products-slider__item">
                             <div class="product-item__title">Определение мутаций в гене PIK3CA
@@ -764,7 +732,7 @@
                                 7 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                     </div>
                     <div class="stomach-slider hide slider-block">
@@ -777,44 +745,7 @@
                                 12 500 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default js-open-modal"
-                                data-modal="2">Подробнее</a>
-                            <div class="product-popup product1 modal" data-modal="2">
-                                <div class="product-popup__title">Рак легких, базовая панель (гены EGFR, KRAS, NRAS,
-                                    BRAF)</div>
-                                <div class="scrollbar-inner">
-                                    <div class="product-popup__content">
-                                        <p>Тест позволяет установить наличие мутаций в 4
-                                            генах, ассоциированных с раком легкого.</p>
-                                        <p>Список генов, входящих в панель: EGFR, KRAS, NRAS, BRAF</p>
-                                        <p> Базовая панель позволяет определить мутации в генах, имеющих наибольшую
-                                            частоту
-                                            клинически релеватнных мутаций, и подобрать лечение ингибиторами
-                                            тирозинкиназы
-                                            EGFR и ингибиторами BRAF.</p>
-                                        <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
-                                            немелкоклеточного
-                                            рака легкого. Наличие таких активирующих мутаций является показанием для
-                                            назначения таргетной противоопухолевой терапии специфическими
-                                            ингибиторами
-                                            EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
-                                            немелкоклеточным раком легкого перед назначением т</p>
-                                        <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
-                                            немелкоклеточного
-                                            рака легкого. Наличие таких активирующих мутаций является показанием для
-                                            назначения таргетной противоопухолевой терапии специфическими
-                                            ингибиторами
-                                            EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
-                                            немелкоклеточным раком легкого перед назначением т</p>
-                                    </div>
-                                </div>
-                                <button class="js-modal-close"><img src="./images/close.svg" alt=""></button>
-                                <div class="product-popup__time product-item__time">Сроки:<span> 14 дней</span>
-                                </div>
-                                <div class="product-popup__price product-item__price">12 500 ₽</div>
-                                <a href="javascript:void(0)" class="btn-blue btn-default" id="product1">Заказать</a>
-
-                            </div>
+                            <a href="#product1" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="products-slider__item product-item stomach">
                             <div class="product-item__title">Тест ОнкоКарта
@@ -824,7 +755,7 @@
                                 29 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="products-slider__item product-item stomach">
                             <div class="product-item__title">Тест Онкоскан
@@ -834,7 +765,7 @@
                                 49 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="products-slider__item product-item stomach">
 
@@ -845,7 +776,7 @@
                                 39 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                     </div>
                     <div class="lungs-slider hide slider-block">
@@ -859,7 +790,7 @@
                                 75 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="products-slider__item product-item lungs show">
                             <div class="product-item__title">FoundationOne CDx
@@ -869,7 +800,7 @@
                                 395 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                     </div>
                     <div class="breast-slider hide slider-block">
@@ -882,7 +813,7 @@
                                 11 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                         <div class="products-slider__item product-item breast show">
                             <div class="product-item__title">Определение мутаций в гене PIK3CA
@@ -892,7 +823,7 @@
                                 7 000 ₽
                             </div>
                             <a href="javascript:void(0)" class="btn-blue btn-default">Заказать</a>
-                            <a href="javascript:void(0)" class="btn-white btn-default">Подробнее</a>
+                            <a href="javascript:void(0)" class="btn-white btn-default" data-fancybox="">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -988,9 +919,11 @@
                         </div>
                         <div class="contacts-info__workTime">
                             <p>Режим работы мед центра в <span class="cityIn">Ростове на Дону</span></p>
-                            <p> ПН-ПТ 08:00-19:00</p>
-                            <p>СБ 09:00-17:00</p>
-                            <p>ВС 09:00-15:00</p>
+                            <div class="operating_mode_block">
+                                <p> ПН-ПТ 08:00-19:00</p>
+                                <p>СБ 09:00-17:00</p>
+                                <p>ВС 09:00-15:00</p>
+                            </div>
                         </div>
                         <div class="contacts-info__text1">ПРЕДВАРИТЕЛЬНАЯ ЗАПИСЬ - ОБЯЗАТЕЛЬНА
                         </div>
@@ -1006,7 +939,9 @@
                                     <input class="styled-checkbox privPolicy-check" id="styled-checkbox-3"
                                         type="checkbox" checked>
                                     <label for="styled-checkbox-3">Нажимая на кнопку «Отправить» Вы соглашаетесь с
-                                        <a href="javascript:void(0)">политикой конфиденциальности</a>
+                                        <a target="_blank"
+                                            href="https://genomed.ru/assets/download/privacy_policy_genomed.pdf">политикой
+                                            конфиденциальности</a>
                                         и даете согласие на обработку своих персональных данных
                                     </label>
                                 </div>
@@ -1042,7 +977,9 @@
                             <textarea rows="1" cols="40" name="message" placeholder="Ваше сообщение (не более 200 симв)"
                                 maxlength="200"></textarea>
                             <button type="submit" class="btn-default btn-blue">Отправить</button>
-                            <p>Нажимая на кнопку «Отправить» Вы соглашаетесь с <a href="javascript:void(0)">политикой
+                            <p>Нажимая на кнопку «Отправить» Вы соглашаетесь с
+                                <a target="_blank"
+                                    href="https://genomed.ru/assets/download/privacy_policy_genomed.pdf">политикой
                                     конфиденциальности</a> и даете согласие на обработку своих персональных данных
                             </p>
                         </form>
@@ -1061,16 +998,16 @@
                     <div class="block-menu">
                         <div class="block-menu__title">О компании</div>
                         <ul class="block-menu__menu">
-                            <li><a href="javascript:void(0)">Новости</a></li>
-                            <li><a href="javascript:void(0)">Лицензии и сертификаты</a></li>
-                            <li><a href="javascript:void(0)">Информационные материалы</a></li>
-                            <li><a href="javascript:void(0)">Полезные статьи</a></li>
-                            <li><a href="javascript:void(0)">Вопросы-ответы</a></li>
-                            <li><a href="javascript:void(0)">Наши партнеры</a></li>
-                            <li><a href="javascript:void(0)">Вебинары</a></li>
-                            <li><a href="javascript:void(0)">Отзывы</a></li>
-                            <li><a href="javascript:void(0)">Вакансии</a></li>
-                            <li><a href="javascript:void(0)">Контакты</a></li>
+                            <li><a href="https://genomed.ru/news/">Новости</a></li>
+                            <li><a href="https://genomed.ru/license">Лицензии и сертификаты</a></li>
+                            <li><a href="https://genomed.ru/info-materialy/">Информационные материалы</a></li>
+                            <li><a href="https://genomed.ru/informacionnye-materialy/">Полезные статьи</a></li>
+                            <li><a href="https://genomed.ru/voprosyi-otvetyi/">Вопросы-ответы</a></li>
+                            <li><a href="https://genomed.ru/partneryi-i-sotrudnichestvo/">Наши партнеры</a></li>
+                            <li><a href="https://1consilium.ru/">Вебинары</a></li>
+                            <li><a href="https://genomed.ru/otzyvy/">Отзывы</a></li>
+                            <li><a href="https://genomed.ru/vakansii/">Вакансии</a></li>
+                            <li><a href="https://genomed.ru/contacts/">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1078,13 +1015,15 @@
                     <div class="block-menu">
                         <div class="block-menu__title">Пациентам</div>
                         <ul class="block-menu__menu">
-                            <li><a href="javascript:void(0)">Анализы и цены</a></li>
-                            <li><a href="javascript:void(0)">Часто задаваемые вопросы</a></li>
-                            <li><a href="javascript:void(0)">Квитанция на оплату</a></li>
+                            <li><a href="https://price.genomed.ru/">Анализы и цены</a></li>
+                            <li><a href="https://genomed.ru/voprosyi-otvetyi/">Часто задаваемые вопросы</a></li>
+                            <li><a href="https://genomed.ru/docs/kvitanciya-2016-iyul.docx">Квитанция на оплату</a></li>
                             <li><a href="javascript:void(0)">Как заказать анализы</a></li>
-                            <li><a href="javascript:void(0)">График приема граждан</a></li>
-                            <li><a href="javascript:void(0)">Правила предоставления<br> платных мед. услуг</a></li>
-                            <li><a href="javascript:void(0)">Вышестоящие огранизации</a></li>
+                            <li><a href="https://genomed.ru/grafik-priema-grazhdan/">График приема граждан</a></li>
+                            <li><a href="https://genomed.ru/docs/postanovlenie-1006.pdf">Правила предоставления<br>
+                                    платных мед. услуг</a></li>
+                            <li><a href="https://genomed.ru/docs/vyshestoyashchie-organizacii-2.pdf">Вышестоящие
+                                    огранизации</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1092,7 +1031,7 @@
                     <div class="block-menu">
                         <div class="block-menu__title">Корпоративным клиентам</div>
                         <ul class="block-menu__menu">
-                            <li><a href="javascript:void(0)">Сотрудничество</a></li>
+                            <li><a href="https://genomed.ru/partneryi-i-sotrudnichestvo/">Сотрудничество</a></li>
                             <li><a href="javascript:void(0)">Анализы и цены</a></li>
                             <li><a href="javascript:void(0)">Часто задаваевые вопросы</a></li>
                             <li><a href="javascript:void(0)"> Бланки направлений</a></li>
@@ -1127,24 +1066,48 @@
             </div>
         </div>
     </footer>
+
+    <!--модальные окна-->
     <div class="modal-block" id="modal_town_new">
         <div class="wrap">
             <div class="row">
-                <div class="col-12"><h5 >Выберите свой город</h5></div>
+                <div class="col-12">
+                    <h5>Выберите свой город</h5>
+                </div>
             </div>
-
-
             <div class="row mo-office">
-                <div class="col-lg-3"><div class="city-item" id="city_list1" data-showonmap="" data-town="Москва">Москва</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list2" data-showonmap="" data-town="Санкт-Петербург">Санкт-Петербург</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list3" data-showonmap="" data-town="Ростов-на-Дону">Ростов-на-Дону</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list4" data-showonmap="" data-town="Пермь">Пермь</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list5" data-showonmap="" data-town="Екатеринбург">Екатеринбург</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list6" data-showonmap="" data-town="Казань">Казань</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list7" data-showonmap="" data-town="Волгоград">Волгоград</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list8" data-showonmap="" data-town="Самара">Самара</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list9" data-showonmap="" data-town="Челябинск">Челябинск</div></div>
-                <div class="col-lg-3"><div class="city-item" id="city_list10" data-showonmap="" data-town="Новосибирск">Новосибирск</div></div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list1" data-showonmap="" data-town="Москва">Москва</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list2" data-showonmap="" data-town="Санкт-Петербург">Санкт-Петербург
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list3" data-showonmap="" data-town="Ростов-на-Дону">Ростов-на-Дону
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list4" data-showonmap="" data-town="Пермь">Пермь</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list5" data-showonmap="" data-town="Екатеринбург">Екатеринбург</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list6" data-showonmap="" data-town="Казань">Казань</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list7" data-showonmap="" data-town="Волгоград">Волгоград</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list8" data-showonmap="" data-town="Самара">Самара</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list9" data-showonmap="" data-town="Челябинск">Челябинск</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="city-item" id="city_list10" data-showonmap="" data-town="Новосибирск">Новосибирск</div>
+                </div>
             </div>
 
             <div class="row kdl-office">
@@ -1159,12 +1122,9 @@
                     <div class="city-item kdl_mo" data-town="Волжский">Волжский</div>
                     <div class="city-item kdl_mo" data-town="Домодедово">Домодедово</div>
                     <div class="city-item kdl_mo" data-town="Долгопрудный">Долгопрудный</div>
-
-
                 </div>
 
                 <div class="col-lg-3">
-
                     <div class="city-item kdl_mo" data-town="Краснодар">Краснодар</div>
                     <div class="city-item kdl_mo" data-town="Краснознаменск">Краснознаменск</div>
                     <div class="city-item kdl_mo" data-town="Королев">Королев</div>
@@ -1178,7 +1138,6 @@
 
 
                 <div class="col-lg-3">
-
                     <div class="city-item kdl_mo" data-town="Новороссийск">Новороссийск</div>
                     <div class="city-item kdl_mo" data-town="Одинцово">Одинцово</div>
                     <div class="city-item kdl_mo" data-town="Подольск">Подольск</div>
@@ -1191,7 +1150,6 @@
                 </div>
 
                 <div class="col-lg-3">
-
                     <div class="city-item kdl_mo" data-town="Тверь">Тверь</div>
                     <div class="city-item kdl_mo" data-town="Тюмень">Тюмень</div>
                     <div class="city-item kdl_mo" data-town="Химки">Химки</div>
@@ -1199,7 +1157,6 @@
                     <div class="city-item kdl_mo" data-town="Энгельс">Энгельс</div>
                     <div class="city-item kdl_mo" data-town="Уфа">Уфа</div>
                     <div class="city-item kdl_mo" data-town="Ярославль">Ярославль</div>
-
                 </div>
             </div>
             <p><strong>Или укажите в поле</strong></p>
@@ -1208,20 +1165,68 @@
             <br>
         </div>
     </div>
-
-    <div class="float-phone"><a href="tel:+78003334538"><img src="./images/purple-tel.svg" alt="телефон"></a></div>
+    <div class="product-popup modal" id="product1">
+        <div class="product-popup__title">Рак легких, базовая панель (гены EGFR, KRAS, NRAS,
+            BRAF)</div>
+        <div class="scrollbar-inner">
+            <div class="product-popup__content">
+                <p>Тест позволяет установить наличие мутаций в 4
+                    генах, ассоциированных с раком легкого.</p>
+                <p>Список генов, входящих в панель: EGFR, KRAS, NRAS, BRAF</p>
+                <p> Базовая панель позволяет определить мутации в генах, имеющих наибольшую
+                    частоту
+                    клинически релеватнных мутаций, и подобрать лечение ингибиторами
+                    тирозинкиназы
+                    EGFR и ингибиторами BRAF.</p>
+                <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
+                    немелкоклеточного
+                    рака легкого. Наличие таких активирующих мутаций является показанием для
+                    назначения таргетной противоопухолевой терапии специфическими
+                    ингибиторами
+                    EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
+                    немелкоклеточным раком легкого перед назначением т</p>
+                <p>Активирующие мутации в гене EGFR встречаются в 10-35% случаев
+                    немелкоклеточного
+                    рака легкого. Наличие таких активирующих мутаций является показанием для
+                    назначения таргетной противоопухолевой терапии специфическими
+                    ингибиторами
+                    EGFR-тирозинкиназы (эрлотиниб, гефитиниб, афатиниб). Всем больным
+                    немелкоклеточным раком легкого перед назначением т</p>
+            </div>
+        </div>
+        <div class="product-popup__time product-item__time">Сроки:<span> 14 дней</span>
+        </div>
+        <div class="product-popup__price product-item__price">12 500 ₽</div>
+        <a href="javascript:void(0)" class="btn-blue btn-default" id="productBtn">Заказать</a>
+    </div>
+    <div id="consultationModal3" class="consultationModal">
+        <div class="wrap">
+            <p><strong>Выберите удобный<br />способ связи</strong></p>
+            <p>
+                <a href="whatsapp://send?phone=[[++callback_phone]]">
+                    <span class="consultationModal_whatsapp"></span><br />
+                    WhatsApp
+                </a>
+                <a href="viber://add?number=[[++callback_phone]]">
+                    <span class="consultationModal_viber"></span><br />
+                    Viber
+                </a>
+                <a href="tg://resolve?domain=genomed1">
+                    <span class="consultationModal_telegram"></span><br />
+                    Telegram
+                </a>
+            </p>
+            <p class="consultationModal_desc">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <div class="float-phone"><a href="tel:+78003334538"><img src="./images/whitePhone.svg" alt="телефон"></a></div>
     <!-- scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="https://api-maps.yandex.ru/2.1/?apikey=294e81d6-8d10-4123-8911-0fa6253f70b1&lang=ru_RU"
         type="text/javascript">  </script>
-
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
     <script src="https://yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
     <script src="./js/city.js"></script>
     <script src="./js/jquery.scrollbar-gh-pages/jquery.scrollbar.js"></script>

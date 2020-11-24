@@ -123,7 +123,7 @@
     .product-popup__price.product-item__price {
         margin-bottom: 10px;
     }
-    #product1 {
+    #productBtn {
         width: 180px;
     }
 }
@@ -211,6 +211,9 @@
     .stages .col-12 {
         margin-bottom: 50px;
     }
+    .stages-item {
+        min-height: auto;
+    }
     .application-form img {
         display: none;
     }
@@ -278,6 +281,9 @@
         padding: 0 0 5px 0;
         text-align: right;
     }
+    .header-top__city .city-title {
+        padding-top: 0;
+    }
     .treatment {
         padding: 76px 0 44px 0;
     }
@@ -324,7 +330,7 @@
         height: 180px;
         font: normal 400 14px/20px 'Gilroy';
     }
-    #product1 {
+    #productBtn {
         width: 130px;
         height: 35px;
         padding: 9px;
@@ -453,7 +459,6 @@
         text-transform: none;
     }
     #header-menu__city .change_city {
-
         font-weight: 700;
         color: #A991FF;
         margin-bottom: 0;
@@ -716,16 +721,20 @@
     .float-phone {
         position: fixed;
         position: fixed;
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
         display: block;
         top: calc(100% - 80px);
         right: 20px;
         z-index: 10000;
+        background: #1A2A8A;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 8px;
     }
     .float-phone img {
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
     }
 }
 

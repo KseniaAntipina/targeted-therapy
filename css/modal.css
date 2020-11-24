@@ -1,0 +1,243 @@
+.fancybox-close-small {
+    opacity: 1;
+}
+
+[data-fancybox-close] {
+    width: 28px;
+    height: 28px;
+    background: #1A2A8A;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+[data-fancybox-close]:before {
+    position: absolute;
+    content: '\f00d';
+    width: 28px;
+    height: 28px;
+    bottom: -1px;
+    left: 0;
+    font-family: FontAwesome;
+    color: #fff;
+}
+
+.fancybox-button svg {
+    display: none;
+}
+
+.modal-block {
+    display: none;
+    max-width: 991px;
+    padding: 19px 19px;
+    background: 0 0;
+}
+
+.modal-block .wrap {
+    background: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+}
+
+.modal-block h5 {
+    margin-bottom: 30px;
+    font-weight: bold
+}
+
+.modal-block .mo-office {
+    margin-bottom: 30px;
+    font-weight: bold
+}
+
+.modal-block .kdl-office {
+    margin-bottom: 30px;
+}
+
+.city-item {
+    cursor: pointer;
+}
+
+.modal-block input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(165, 177, 184, 0.5);
+    margin: 0 0 10px;
+    border-radius: 99px;
+    line-height: 48px;
+    padding: 0 50px;
+    color: #A5B1B8;
+    transition: 0.5s;
+}
+
+.modal-block input[type="text"]:focus {
+    border: 1px solid #2F3A40;
+    color: #2F3A40;
+}
+
+.city_block {
+    width: calc(100% - 260px) !important;
+    margin: 0 0 20px;
+}
+
+.city_block_button {
+    display: inline-block;
+    text-align: center;
+    background: #1A2A8A;
+    border-radius: 36px;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #FCFCFC;
+}
+
+.city_block_button:hover {
+    text-decoration: none;
+    background: #335DFF;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/*.ModalBlock{display: none;  max-width: 700px;   padding: 19px 19px;    background: 0 0; }*/
+
+/*.ModalBlock .wrap {background: #fff;    padding: 30px;    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.3);    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);}*/
+
+/*стили для модального окна "записаться"*/
+
+.consultationModal {
+    display: none;
+    max-width: 450px;
+    text-align: center;
+    padding: 19px 19px;
+    background: 0 0;
+}
+
+.consultationModal .wrap {
+    background: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+}
+
+.consultationModal p {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.consultationModal strong {
+    font-weight: 700;
+    font-size: 24px;
+    color: #596363;
+}
+
+.consultationModal p a {
+    display: inline-block;
+    font-size: 12px;
+    color: #7d8285;
+    margin: 0 10px;
+}
+
+.consultationModal p a span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0099ff;
+}
+
+.consultationModal_whatsapp {
+    background: url("https://genomed.ru/tpl/img/whatsapp.png") center center no-repeat #1A2A8A !important;
+    background-size: 24px auto !important;
+}
+
+.consultationModal_viber {
+    background: url("https://genomed.ru/tpl/img/viber.png") center center no-repeat #1A2A8A !important;
+    background-size: 24px auto !important;
+}
+
+.consultationModal_telegram {
+    background: url("https://genomed.ru/tpl/img/telegram.png") center center no-repeat #1A2A8A !important;
+    background-size: 24px auto !important;
+}
+
+.consultationModal input[type=text] {
+    height: 48px;
+    line-height: 46px;
+    padding: 0 20px 0 20px;
+    border: 1px solid rgba(165, 177, 184, 0.5);
+    border-radius: 25px;
+    width: 100%;
+    color: #2F3A40;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.consultationModal input[type=tel] {
+    font-family: 'Gilroy';
+    height: 48px;
+    line-height: 46px;
+    padding: 0 20px 0 20px;
+    border: 1px solid rgba(165, 177, 184, 0.5);
+    border-radius: 25px;
+    width: 100%;
+    color: #2F3A40;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.consultationModal textarea {
+    font-family: 'Gilroy';
+    height: 100px;
+    padding: 20px;
+    border: 1px solid rgba(165, 177, 184, 0.5);
+    border-radius: 15px;
+    width: 100%;
+    color: #2F3A40;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.consultationModal input.error {
+    border: 1px solid #1A2A8A;
+}
+
+.consultationModal input[type=submit] {
+    font-family: 'Gilroy';
+    height: 48px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #88C961;
+    background: #1A2A8A;
+    border-radius: 35px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.consultationModal_desc {
+    font-size: 12px;
+    color: #7d8285;
+}
+
+.fancybox-close-small {
+    opacity: 1;
+}
+
+.fancybox-button svg {
+    display: none;
+}
+
+.ajax_form .error {
+    border: 1px solid #1A2A8A !important;
+}
+
+.product-popup [data-fancybox-close] {
+    background: #335DFF;
+}

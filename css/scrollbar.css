@@ -40,35 +40,6 @@
     cursor: default;
 }
 
-.scroll-textarea {
-    border: 1px solid #cccccc;
-    border-top-color: #999999;
-}
-
-.scroll-textarea>.scroll-content {
-    overflow: hidden !important;
-}
-
-.scroll-textarea>.scroll-content>textarea {
-    border: none !important;
-    box-sizing: border-box;
-    height: 100% !important;
-    margin: 0;
-    max-height: none !important;
-    max-width: none !important;
-    overflow: scroll !important;
-    outline: none;
-    padding: 2px;
-    position: relative !important;
-    top: 0;
-    width: 100% !important;
-}
-
-.scroll-textarea>.scroll-content>textarea::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
 /*************** SIMPLE INNER SCROLLBAR ***************/
 
 .scrollbar-inner>.scroll-element, .scrollbar-inner>.scroll-element div {
@@ -89,9 +60,10 @@
 
 .scrollbar-inner>.scroll-element.scroll-y {
     height: 100%;
-    right: 20px;
+    right: 0;
     top: 0;
-    width: 7px;
+    width: 0.4805em;
+    z-index: 10000000000;
 }
 
 .scrollbar-inner>.scroll-element .scroll-element_outer {
@@ -117,12 +89,8 @@
     background-color: #335DFF;
 }
 
-.scrollbar-inner>.scroll-element:hover .scroll-bar {
-    background-color: #919191;
-}
-
 .scrollbar-inner>.scroll-element.scroll-draggable .scroll-bar {
-    background-color: #919191;
+    background-color: #335DFF;
 }
 
 /* update scrollbar offset if both scrolls are visible */

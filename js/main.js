@@ -32,6 +32,50 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.all-products-slider, .stomach-slider, .lungs-slider, .breast-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
+        responsive: [
+            {
+                breakpoint: 10000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    });
+
+    $('.stages-slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 10000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    jQuery('.scrollbar-inner').scrollbar();
+
 });
 
 /*скрипт бургер меню */
@@ -149,133 +193,6 @@ $('.selectCity, .selectDisease , .selectDisease2').each(function (index, element
 
 });
 
-
-
-/*скрипт для слайдера товаров*/
-
-$(document).ready(function () {
-    $('.all-products-slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            }
-        ]
-    });
-});
-
-
-$(document).ready(function () {
-    $('.stomach-slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            }
-        ]
-    });
-});
-
-$(document).ready(function () {
-    $('.lungs-slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            }
-        ]
-    });
-});
-
-
-$(document).ready(function () {
-    $('.breast-slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev-custom" id="product-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next-custom" id="product-next"></button>',
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            }
-        ]
-    });
-});
-
-/*слайдер этапов */
-
-$(document).ready(function () {
-    $('.stages-slider').slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-});
-
-
 /* форма 5 вопросов */
 
 let closeForm = document.querySelector('.closeBtn');
@@ -283,7 +200,6 @@ let closeModal = document.querySelector('.closeBtn2');
 let surveyFormOpen = document.getElementById('surveyFormOpen');
 let headerBanner = document.querySelector('.header-banner-block1');
 let surveyForm = document.querySelector('.header-banner-block2');
-
 
 closeForm.onclick = () => {
     surveyForm.style.display = 'none';
@@ -349,57 +265,6 @@ function validateForm() {
 document.querySelectorAll('.phone-mask').forEach((e) => {
     const phoneMask = IMask(e, { mask: '+{7}(000)000-00-00' })
 })
-
-
-
-/*popups */
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
-    var modalButtons = document.querySelectorAll('.js-open-modal'),
-        closeButtons = document.querySelectorAll('.js-modal-close');
-
-    modalButtons.forEach(function (item) {
-
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            var modalId = this.getAttribute('data-modal'),
-                modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
-            modalElem.classList.add('active');
-
-        });
-    });
-
-    closeButtons.forEach(function (item) {
-        item.addEventListener('click', function (e) {
-            var parentModal = this.closest('.modal');
-            parentModal.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    });
-
-    document.body.addEventListener('keyup', function (e) {
-        var key = e.keyCode;
-        if (key == 27) {
-            document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-        };
-    }, false);
-
-    overlay.addEventListener('click', function () {
-        document.querySelector('.modal.active').classList.remove('active');
-        this.classList.remove('active');
-    });
-
-});
-
-
-/*скроллбар */
-
-jQuery(document).ready(function () {
-    jQuery('.scrollbar-inner').scrollbar();
-});
 
 
 

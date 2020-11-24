@@ -201,7 +201,6 @@ header {
     display: flex;
     justify-content: flex-end;
     padding-top: 12px;
-    align-items: end;
 }
 
 .header-top__city {
@@ -209,19 +208,22 @@ header {
     font: normal 700 12px/15px 'Gilroy';
     position: relative;
     padding-bottom: 3px;
-    padding-top: 5px;
 }
 
 .header-top__city .change_city {
-    display: block;
+    display: inline-block;
     color: #fff;
 }
+
 .header-top__city .city-title {
     color: #A991FF;
+    display: block;
+    padding-top: 5px;
 }
 
 #city {
     color: #fff;
+    display: inline-block;
 }
 
 #header-menu__city {
@@ -237,10 +239,6 @@ header {
     position: absolute;
     left: -21px;
     top: 5px;
-}
-
-.header-top__city span {
-    display: block;
 }
 
 .header-top_tel {
@@ -357,6 +355,10 @@ header {
     display: inline-block;
     height: 52px;
     width: 222px;
+}
+
+.form__answer .inputTextCity {
+    margin-left: 0;
 }
 
 .header-banner__advantages {
@@ -745,11 +747,16 @@ header {
     border: 1px solid #EDF0F7;
     border-radius: 15px;
     padding: 74px 17px 34px 24px;
+    min-height: 300px;
 }
 
 .stages-item img {
     position: absolute;
     top: -35px;
+}
+
+.stages-item a {
+    color: #335DFF;
 }
 
 .stages-item:nth-child(1), .stages-item:nth-child(2) {
@@ -1033,7 +1040,6 @@ header {
     color: #2F3A40;
     height: 170px;
     overflow-y: scroll;
-    н
 }
 
 .new-select__list.on {
@@ -1071,7 +1077,6 @@ header {
 }
 
 .modal {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1082,19 +1087,7 @@ header {
     background: #FFFFFF;
     border: 1px solid #DFE4F1;
     border-radius: 10px;
-}
-
-.js-modal-close {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.modal.active {
-    display: block;
+    overflow: visible;
 }
 
 .product-popup__title {
@@ -1109,7 +1102,7 @@ header {
     padding-right: 40px;
 }
 
-#product1 {
+#productBtn {
     width: 211px;
 }
 
